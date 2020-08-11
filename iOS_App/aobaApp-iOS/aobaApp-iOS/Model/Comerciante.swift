@@ -12,10 +12,13 @@ import Foundation
 
 class Comerciante: User {
     
-    var teste: String
-    init(teste: String, email: String, senha: String, nome: String, foto: String){
-        self.teste = teste
+    var tipoComercio: TipoComercio
+    var endereco: Endereco
+    
+    init(email: String, senha: String, nome: String, foto: String, tipoComercio: TipoComercio, endereco: Endereco){
         
+        self.tipoComercio = tipoComercio
+        self.endereco = endereco
         super.init(email: email, senha: senha, nome: nome, foto: foto)
     }
 }

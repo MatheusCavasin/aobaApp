@@ -14,6 +14,7 @@ class User{
     var senha: String
     var nome: String
     var foto: String
+
     
     init(email: String, senha: String, nome: String, foto: String){
         
