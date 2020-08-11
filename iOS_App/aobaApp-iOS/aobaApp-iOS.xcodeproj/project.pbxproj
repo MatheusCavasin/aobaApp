@@ -13,6 +13,8 @@
 		88051B2824D1A39100339FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2624D1A39100339FE9 /* Main.storyboard */; };
 		88051B2A24D1A39300339FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2924D1A39300339FE9 /* Assets.xcassets */; };
 		88051B2D24D1A39300339FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */; };
+		88359C8224D9A3640073628A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8124D9A3640073628A /* User.swift */; };
+		88359C8424D9A5490073628A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8324D9A5490073628A /* Comerciante.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		88051B2924D1A39300339FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88051B2C24D1A39300339FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88051B2E24D1A39300339FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88359C8124D9A3640073628A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		88359C8324D9A5490073628A /* Comerciante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comerciante.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		88051B1F24D1A39100339FE9 /* aobaApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				88359C7E24D848770073628A /* Model */,
+				88359C7F24D848B90073628A /* Controller */,
+				88359C8024D848D10073628A /* Storyboards */,
 				88051B2024D1A39100339FE9 /* AppDelegate.swift */,
 				88051B2224D1A39100339FE9 /* SceneDelegate.swift */,
-				88051B2424D1A39100339FE9 /* ViewController.swift */,
-				88051B2624D1A39100339FE9 /* Main.storyboard */,
 				88051B2924D1A39300339FE9 /* Assets.xcassets */,
-				88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */,
 				88051B2E24D1A39300339FE9 /* Info.plist */,
 			);
 			path = "aobaApp-iOS";
+			sourceTree = "<group>";
+		};
+		88359C7E24D848770073628A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88359C8124D9A3640073628A /* User.swift */,
+				88359C8324D9A5490073628A /* Comerciante.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88359C7F24D848B90073628A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88051B2424D1A39100339FE9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88359C8024D848D10073628A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				88051B2624D1A39100339FE9 /* Main.storyboard */,
+				88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88359C8224D9A3640073628A /* User.swift in Sources */,
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
+				88359C8424D9A5490073628A /* Comerciante.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

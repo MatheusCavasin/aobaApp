@@ -97,8 +97,16 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            TextField(
+              decoration: InputDecoration(
+                  border: InputBorder.none, hintText: 'Altura'),
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  border: InputBorder.none, hintText: 'Peso'),
+            ),
             Text(
-              'You have pushed the button this many times:',
+              'Quantidades de cliques:',
             ),
             Text(
               '$_counter',
