@@ -15,6 +15,18 @@
 		88051B2D24D1A39300339FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */; };
 		88359C8224D9A3640073628A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8124D9A3640073628A /* User.swift */; };
 		88359C8424D9A5490073628A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8324D9A5490073628A /* Comerciante.swift */; };
+		88359C8624E2EB9B0073628A /* PrincipalComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */; };
+		88359C8824E416BC0073628A /* CadastroVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8724E416BC0073628A /* CadastroVendedor.storyboard */; };
+		88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8924E4189E0073628A /* PrincipalVendedor.storyboard */; };
+		88359C8C24E41D670073628A /* CadastroComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8B24E41D670073628A /* CadastroComprador.storyboard */; };
+		88359C9024E41F8C0073628A /* TabHortifruitComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8F24E41F8C0073628A /* TabHortifruitComprador.storyboard */; };
+		88359C9224E41FA50073628A /* TabPedidosComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */; };
+		88359C9424E41FED0073628A /* PedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9324E41FED0073628A /* PedidosVendedor.storyboard */; };
+		88359C9624E420060073628A /* TabAnuncioVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9524E420060073628A /* TabAnuncioVendedor.storyboard */; };
+		88359C9824E4200E0073628A /* TabPerfilVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9724E4200E0073628A /* TabPerfilVendedor.storyboard */; };
+		88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9924E421940073628A /* TabPedidosVendedor.storyboard */; };
+		88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9B24E424620073628A /* PrincipalVendedor.swift */; };
+		88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9D24E429290073628A /* PrincipalComprador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,18 @@
 		88051B2E24D1A39300339FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88359C8124D9A3640073628A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		88359C8324D9A5490073628A /* Comerciante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comerciante.swift; sourceTree = "<group>"; };
+		88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrincipalComprador.storyboard; sourceTree = "<group>"; };
+		88359C8724E416BC0073628A /* CadastroVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastroVendedor.storyboard; sourceTree = "<group>"; };
+		88359C8924E4189E0073628A /* PrincipalVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrincipalVendedor.storyboard; sourceTree = "<group>"; };
+		88359C8B24E41D670073628A /* CadastroComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastroComprador.storyboard; sourceTree = "<group>"; };
+		88359C8F24E41F8C0073628A /* TabHortifruitComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabHortifruitComprador.storyboard; sourceTree = "<group>"; };
+		88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPedidosComprador.storyboard; sourceTree = "<group>"; };
+		88359C9324E41FED0073628A /* PedidosVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PedidosVendedor.storyboard; sourceTree = "<group>"; };
+		88359C9524E420060073628A /* TabAnuncioVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabAnuncioVendedor.storyboard; sourceTree = "<group>"; };
+		88359C9724E4200E0073628A /* TabPerfilVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPerfilVendedor.storyboard; sourceTree = "<group>"; };
+		88359C9924E421940073628A /* TabPedidosVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPedidosVendedor.storyboard; sourceTree = "<group>"; };
+		88359C9B24E424620073628A /* PrincipalVendedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVendedor.swift; sourceTree = "<group>"; };
+		88359C9D24E429290073628A /* PrincipalComprador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				88051B2424D1A39100339FE9 /* ViewController.swift */,
+				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
+				88359C9D24E429290073628A /* PrincipalComprador.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,10 +117,36 @@
 		88359C8024D848D10073628A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				88051B2624D1A39100339FE9 /* Main.storyboard */,
 				88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */,
+				88051B2624D1A39100339FE9 /* Main.storyboard */,
+				88359C8E24E41F4F0073628A /* Comprador */,
+				88359C8D24E41F3B0073628A /* Vendedor */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		88359C8D24E41F3B0073628A /* Vendedor */ = {
+			isa = PBXGroup;
+			children = (
+				88359C8724E416BC0073628A /* CadastroVendedor.storyboard */,
+				88359C9324E41FED0073628A /* PedidosVendedor.storyboard */,
+				88359C8924E4189E0073628A /* PrincipalVendedor.storyboard */,
+				88359C9524E420060073628A /* TabAnuncioVendedor.storyboard */,
+				88359C9924E421940073628A /* TabPedidosVendedor.storyboard */,
+				88359C9724E4200E0073628A /* TabPerfilVendedor.storyboard */,
+			);
+			path = Vendedor;
+			sourceTree = "<group>";
+		};
+		88359C8E24E41F4F0073628A /* Comprador */ = {
+			isa = PBXGroup;
+			children = (
+				88359C8B24E41D670073628A /* CadastroComprador.storyboard */,
+				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
+				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
+				88359C8F24E41F8C0073628A /* TabHortifruitComprador.storyboard */,
+			);
+			path = Comprador;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +207,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88359C8824E416BC0073628A /* CadastroVendedor.storyboard in Resources */,
+				88359C8624E2EB9B0073628A /* PrincipalComprador.storyboard in Resources */,
+				88359C8C24E41D670073628A /* CadastroComprador.storyboard in Resources */,
 				88051B2D24D1A39300339FE9 /* LaunchScreen.storyboard in Resources */,
+				88359C9024E41F8C0073628A /* TabHortifruitComprador.storyboard in Resources */,
 				88051B2A24D1A39300339FE9 /* Assets.xcassets in Resources */,
+				88359C9624E420060073628A /* TabAnuncioVendedor.storyboard in Resources */,
+				88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */,
 				88051B2824D1A39100339FE9 /* Main.storyboard in Resources */,
+				88359C9424E41FED0073628A /* PedidosVendedor.storyboard in Resources */,
+				88359C9824E4200E0073628A /* TabPerfilVendedor.storyboard in Resources */,
+				88359C9224E41FA50073628A /* TabPedidosComprador.storyboard in Resources */,
+				88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +233,8 @@
 				88359C8224D9A3640073628A /* User.swift in Sources */,
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
+				88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */,
+				88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */,
 				88359C8424D9A5490073628A /* Comerciante.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
 			);
