@@ -24,6 +24,8 @@
 		D1500F1824E2D7840000C6A9 /* TipoProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1500F1724E2D7840000C6A9 /* TipoProduto.swift */; };
 		D1500F1A24E2D81B0000C6A9 /* Anuncio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1500F1924E2D81B0000C6A9 /* Anuncio.swift */; };
 		D1500F1C24E2D9600000C6A9 /* ItemCarrinho.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1500F1B24E2D9600000C6A9 /* ItemCarrinho.swift */; };
+		D1500F1E24E2DBBC0000C6A9 /* StatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1500F1D24E2DBBC0000C6A9 /* StatusItem.swift */; };
+		D1500F2024E2DC3B0000C6A9 /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1500F1F24E2DC3B0000C6A9 /* Pedido.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		D1500F1724E2D7840000C6A9 /* TipoProduto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoProduto.swift; sourceTree = "<group>"; };
 		D1500F1924E2D81B0000C6A9 /* Anuncio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anuncio.swift; sourceTree = "<group>"; };
 		D1500F1B24E2D9600000C6A9 /* ItemCarrinho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCarrinho.swift; sourceTree = "<group>"; };
+		D1500F1D24E2DBBC0000C6A9 /* StatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItem.swift; sourceTree = "<group>"; };
+		D1500F1F24E2DC3B0000C6A9 /* Pedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				D1500F1724E2D7840000C6A9 /* TipoProduto.swift */,
 				D1500F1924E2D81B0000C6A9 /* Anuncio.swift */,
 				D1500F1B24E2D9600000C6A9 /* ItemCarrinho.swift */,
+				D1500F1D24E2DBBC0000C6A9 /* StatusItem.swift */,
+				D1500F1F24E2DC3B0000C6A9 /* Pedido.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 				D1500F1824E2D7840000C6A9 /* TipoProduto.swift in Sources */,
 				D1500F0E24E2D5230000C6A9 /* TipoComercio.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
+				D1500F2024E2DC3B0000C6A9 /* Pedido.swift in Sources */,
+				D1500F1E24E2DBBC0000C6A9 /* StatusItem.swift in Sources */,
 				D1500F1C24E2D9600000C6A9 /* ItemCarrinho.swift in Sources */,
 				D1500F1A24E2D81B0000C6A9 /* Anuncio.swift in Sources */,
 			);

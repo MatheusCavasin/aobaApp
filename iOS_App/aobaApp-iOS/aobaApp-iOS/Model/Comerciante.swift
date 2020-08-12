@@ -16,7 +16,6 @@ class Comerciante: User {
     var endereco: Endereco
     
     init(email: String, senha: String, nome: String, foto: String, tipoComercio: TipoComercio, endereco: Endereco){
-        
         self.tipoComercio = tipoComercio
         self.endereco = endereco
         super.init(email: email, senha: senha, nome: nome, foto: foto)
