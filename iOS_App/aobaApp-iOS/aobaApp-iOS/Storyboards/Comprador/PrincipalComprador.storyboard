@@ -3,77 +3,46 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pedidos-->
-        <scene sceneID="h8h-Bp-XEa">
-            <objects>
-                <viewController id="Doc-Y5-ul3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vli-KN-6Hu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PEDIDOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-7V-JVV">
-                                <rect key="frame" x="54" y="160" width="205" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="80H-pD-iMz"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Pedidos" id="3hy-DF-mY8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A0F-c0-noj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="225" y="42"/>
-        </scene>
-        <!--Hortifruits-->
-        <scene sceneID="hz6-Mg-h12">
-            <objects>
-                <viewController id="DqB-ZM-IRv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xLG-jz-K9R">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HORTIFRUITS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK1-NQ-4YO">
-                                <rect key="frame" x="54" y="194" width="307" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="jpN-YC-gBo"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Hortifruits" id="z8D-yV-3eg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Se-pD-4TL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="225" y="-609"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Principal Comprador-->
         <scene sceneID="NZq-gX-7oL">
             <objects>
-                <tabBarController id="50v-eu-da0" sceneMemberID="viewController">
+                <tabBarController id="50v-eu-da0" customClass="PrincipalComprador" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oqj-mt-SfZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DqB-ZM-IRv" kind="relationship" relationship="viewControllers" id="aKM-wK-eY7"/>
-                        <segue destination="Doc-Y5-ul3" kind="relationship" relationship="viewControllers" id="C8q-c7-GFd"/>
+                        <segue destination="OjD-Xs-WUw" kind="relationship" relationship="viewControllers" id="EV1-Oo-qEL"/>
+                        <segue destination="MfM-BF-jLk" kind="relationship" relationship="viewControllers" id="ODH-Eu-PXr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WxC-oy-Tha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-698" y="-285"/>
+        </scene>
+        <!--TabPedidosComprador-->
+        <scene sceneID="x2W-As-TWm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabPedidosComprador" id="OjD-Xs-WUw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ru9-1R-CrV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhQ-t8-w1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-487"/>
+        </scene>
+        <!--TabPedidosComprador-->
+        <scene sceneID="471-MU-Ui0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabPedidosComprador" id="MfM-BF-jLk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fyY-TO-tld"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HX3-k7-B8F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-113"/>
         </scene>
     </scenes>
 </document>
