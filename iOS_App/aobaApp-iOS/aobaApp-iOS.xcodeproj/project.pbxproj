@@ -14,7 +14,6 @@
 		88051B2A24D1A39300339FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2924D1A39300339FE9 /* Assets.xcassets */; };
 		88051B2D24D1A39300339FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88051B2B24D1A39300339FE9 /* LaunchScreen.storyboard */; };
 		88359C8224D9A3640073628A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8124D9A3640073628A /* User.swift */; };
-		88359C8424D9A5490073628A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C8324D9A5490073628A /* Comerciante.swift */; };
 		88359C8624E2EB9B0073628A /* PrincipalComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */; };
 		88359C8824E416BC0073628A /* CadastroVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8724E416BC0073628A /* CadastroVendedor.storyboard */; };
 		88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C8924E4189E0073628A /* PrincipalVendedor.storyboard */; };
@@ -27,6 +26,18 @@
 		88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9924E421940073628A /* TabPedidosVendedor.storyboard */; };
 		88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9B24E424620073628A /* PrincipalVendedor.swift */; };
 		88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9D24E429290073628A /* PrincipalComprador.swift */; };
+		D19FE67C24E4336A007D138A /* CategoriaProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE66F24E43368007D138A /* CategoriaProduto.swift */; };
+		D19FE67D24E4336A007D138A /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67024E43369007D138A /* Pedido.swift */; };
+		D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67124E43369007D138A /* Comerciante.swift */; };
+		D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67224E43369007D138A /* Anuncio.swift */; };
+		D19FE68024E4336A007D138A /* Produtor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67324E43369007D138A /* Produtor.swift */; };
+		D19FE68124E4336A007D138A /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67424E43369007D138A /* Produto.swift */; };
+		D19FE68324E4336A007D138A /* ItemCarrinho.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67624E43369007D138A /* ItemCarrinho.swift */; };
+		D19FE68424E4336A007D138A /* StatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67724E43369007D138A /* StatusItem.swift */; };
+		D19FE68524E4336A007D138A /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67824E43369007D138A /* Endereco.swift */; };
+		D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67924E43369007D138A /* TipoComercio.swift */; };
+		D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67A24E4336A007D138A /* TipoProduto.swift */; };
+		D19FE68824E4336A007D138A /* Ceasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67B24E4336A007D138A /* Ceasa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +50,6 @@
 		88051B2C24D1A39300339FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88051B2E24D1A39300339FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88359C8124D9A3640073628A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		88359C8324D9A5490073628A /* Comerciante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comerciante.swift; sourceTree = "<group>"; };
 		88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrincipalComprador.storyboard; sourceTree = "<group>"; };
 		88359C8724E416BC0073628A /* CadastroVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastroVendedor.storyboard; sourceTree = "<group>"; };
 		88359C8924E4189E0073628A /* PrincipalVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrincipalVendedor.storyboard; sourceTree = "<group>"; };
@@ -52,6 +62,18 @@
 		88359C9924E421940073628A /* TabPedidosVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPedidosVendedor.storyboard; sourceTree = "<group>"; };
 		88359C9B24E424620073628A /* PrincipalVendedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVendedor.swift; sourceTree = "<group>"; };
 		88359C9D24E429290073628A /* PrincipalComprador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
+		D19FE66F24E43368007D138A /* CategoriaProduto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaProduto.swift; sourceTree = "<group>"; };
+		D19FE67024E43369007D138A /* Pedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
+		D19FE67124E43369007D138A /* Comerciante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comerciante.swift; path = ../../../../../Model/Comerciante.swift; sourceTree = "<group>"; };
+		D19FE67224E43369007D138A /* Anuncio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anuncio.swift; sourceTree = "<group>"; };
+		D19FE67324E43369007D138A /* Produtor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produtor.swift; sourceTree = "<group>"; };
+		D19FE67424E43369007D138A /* Produto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		D19FE67624E43369007D138A /* ItemCarrinho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCarrinho.swift; sourceTree = "<group>"; };
+		D19FE67724E43369007D138A /* StatusItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItem.swift; sourceTree = "<group>"; };
+		D19FE67824E43369007D138A /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		D19FE67924E43369007D138A /* TipoComercio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoComercio.swift; sourceTree = "<group>"; };
+		D19FE67A24E4336A007D138A /* TipoProduto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoProduto.swift; sourceTree = "<group>"; };
+		D19FE67B24E4336A007D138A /* Ceasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ceasa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +120,19 @@
 		88359C7E24D848770073628A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D19FE67224E43369007D138A /* Anuncio.swift */,
+				D19FE66F24E43368007D138A /* CategoriaProduto.swift */,
+				D19FE67B24E4336A007D138A /* Ceasa.swift */,
+				D19FE67124E43369007D138A /* Comerciante.swift */,
+				D19FE67824E43369007D138A /* Endereco.swift */,
+				D19FE67624E43369007D138A /* ItemCarrinho.swift */,
+				D19FE67024E43369007D138A /* Pedido.swift */,
+				D19FE67424E43369007D138A /* Produto.swift */,
+				D19FE67324E43369007D138A /* Produtor.swift */,
+				D19FE67724E43369007D138A /* StatusItem.swift */,
+				D19FE67924E43369007D138A /* TipoComercio.swift */,
+				D19FE67A24E4336A007D138A /* TipoProduto.swift */,
 				88359C8124D9A3640073628A /* User.swift */,
-				88359C8324D9A5490073628A /* Comerciante.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,9 +266,20 @@
 				88359C8224D9A3640073628A /* User.swift in Sources */,
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
+				D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */,
 				88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */,
+				D19FE68024E4336A007D138A /* Produtor.swift in Sources */,
 				88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */,
-				88359C8424D9A5490073628A /* Comerciante.swift in Sources */,
+				D19FE68324E4336A007D138A /* ItemCarrinho.swift in Sources */,
+				D19FE67C24E4336A007D138A /* CategoriaProduto.swift in Sources */,
+				D19FE67D24E4336A007D138A /* Pedido.swift in Sources */,
+				D19FE68824E4336A007D138A /* Ceasa.swift in Sources */,
+				D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */,
+				D19FE68124E4336A007D138A /* Produto.swift in Sources */,
+				D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */,
+				D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */,
+				D19FE68424E4336A007D138A /* StatusItem.swift in Sources */,
+				D19FE68524E4336A007D138A /* Endereco.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
