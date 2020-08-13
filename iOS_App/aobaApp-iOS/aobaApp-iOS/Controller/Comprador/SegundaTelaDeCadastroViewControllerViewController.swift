@@ -1,5 +1,5 @@
 //
-//  PrimeiraTelaDeCadastroViewController.swift
+//  SegundaTelaDeCadastroViewControllerViewController.swift
 //  aobaApp-iOS
 //
 //  Created by Carlos Modinez on 13/08/20.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class PrimeiraTelaDeCadastroViewController: UIViewController {
+class SegundaTelaDeCadastroViewControllerViewController: UIViewController {
 
     @IBOutlet weak var btnProximo: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setBtnProximo()
+     
     }
     
     func setBtnProximo() {
@@ -22,5 +24,4 @@ class PrimeiraTelaDeCadastroViewController: UIViewController {
         btnProximo.layer.borderColor = #colorLiteral(red: 0, green: 0.7470995188, blue: 0.2256398201, alpha: 1)
         btnProximo.layer.cornerRadius = 5.0
     }
-    
 }

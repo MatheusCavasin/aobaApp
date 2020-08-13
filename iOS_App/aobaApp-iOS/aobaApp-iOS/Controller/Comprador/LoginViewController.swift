@@ -22,6 +22,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         setBtnCadastro()
         setBtnEntrar()
+        setEntrarComApple()
     }
 
     func setBtnCadastro() {
@@ -36,9 +37,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     func setEntrarComApple() {
-        btnCadastro.layer.borderWidth = 2.0
-        btnCadastro.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        btnCadastro.layer.cornerRadius = 5.0
+        btnEntrarComApple.layer.borderWidth = 2.0
+        btnEntrarComApple.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        btnEntrarComApple.layer.cornerRadius = 5.0
     }
 
     
