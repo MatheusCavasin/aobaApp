@@ -26,6 +26,8 @@
 		88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9924E421940073628A /* TabPedidosVendedor.storyboard */; };
 		88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9B24E424620073628A /* PrincipalVendedor.swift */; };
 		88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9D24E429290073628A /* PrincipalComprador.swift */; };
+		D19D95D524E57252007701C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D424E57252007701C4 /* LoginViewController.swift */; };
+		D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */; };
 		D19FE67C24E4336A007D138A /* CategoriaProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE66F24E43368007D138A /* CategoriaProduto.swift */; };
 		D19FE67D24E4336A007D138A /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67024E43369007D138A /* Pedido.swift */; };
 		D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67124E43369007D138A /* Comerciante.swift */; };
@@ -62,6 +64,8 @@
 		88359C9924E421940073628A /* TabPedidosVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPedidosVendedor.storyboard; sourceTree = "<group>"; };
 		88359C9B24E424620073628A /* PrincipalVendedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVendedor.swift; sourceTree = "<group>"; };
 		88359C9D24E429290073628A /* PrincipalComprador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
+		D19D95D424E57252007701C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTelaDeCadastroViewController.swift; sourceTree = "<group>"; };
 		D19FE66F24E43368007D138A /* CategoriaProduto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaProduto.swift; sourceTree = "<group>"; };
 		D19FE67024E43369007D138A /* Pedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
 		D19FE67124E43369007D138A /* Comerciante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comerciante.swift; path = ../../../../../Model/Comerciante.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		88359C7F24D848B90073628A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D19D95D324E57228007701C4 /* Comprador */,
 				88051B2424D1A39100339FE9 /* ViewController.swift */,
 				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
 				88359C9D24E429290073628A /* PrincipalComprador.swift */,
@@ -178,6 +183,15 @@
 				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
 				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
 				88359C8F24E41F8C0073628A /* TabHortifruitComprador.storyboard */,
+			);
+			path = Comprador;
+			sourceTree = "<group>";
+		};
+		D19D95D324E57228007701C4 /* Comprador */ = {
+			isa = PBXGroup;
+			children = (
+				D19D95D424E57252007701C4 /* LoginViewController.swift */,
+				D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */,
 			);
 			path = Comprador;
 			sourceTree = "<group>";
@@ -267,6 +281,7 @@
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
 				D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */,
+				D19D95D524E57252007701C4 /* LoginViewController.swift in Sources */,
 				88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */,
 				D19FE68024E4336A007D138A /* Produtor.swift in Sources */,
 				88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */,
@@ -275,6 +290,7 @@
 				D19FE67D24E4336A007D138A /* Pedido.swift in Sources */,
 				D19FE68824E4336A007D138A /* Ceasa.swift in Sources */,
 				D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */,
+				D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */,
 				D19FE68124E4336A007D138A /* Produto.swift in Sources */,
 				D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */,
 				D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */,
