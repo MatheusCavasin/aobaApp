@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="133"/>
         </scene>
-        <!--PrincipalComprador-->
+        <!--CadastroComprador-->
         <scene sceneID="dSa-7K-5HN">
             <objects>
-                <viewControllerPlaceholder storyboardName="PrincipalComprador" id="Spn-Ar-nHw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CadastroComprador" id="Spn-Ar-nHw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mn-Yd-4Bz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="118"/>
