@@ -31,6 +31,8 @@
 		D16DB9AC24E6B9DA00B2B279 /* HortfruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9AA24E6B9DA00B2B279 /* HortfruitsTableViewCell.swift */; };
 		D16DB9AD24E6B9DA00B2B279 /* HortfruitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16DB9AB24E6B9DA00B2B279 /* HortfruitsTableViewCell.xib */; };
 		D16DB9AF24E6BD7900B2B279 /* HortfruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9AE24E6BD7900B2B279 /* HortfruitsViewController.swift */; };
+		D16DB9B224E6E30900B2B279 /* SelecionadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */; };
+		D16DB9B324E6E30900B2B279 /* SelecionadosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */; };
 		D19D95D524E57252007701C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D424E57252007701C4 /* LoginViewController.swift */; };
 		D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */; };
 		D19D95D924E5841A007701C4 /* SegundaTelaDeCadastroViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D824E5841A007701C4 /* SegundaTelaDeCadastroViewControllerViewController.swift */; };
@@ -76,6 +78,8 @@
 		D16DB9AA24E6B9DA00B2B279 /* HortfruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HortfruitsTableViewCell.swift; sourceTree = "<group>"; };
 		D16DB9AB24E6B9DA00B2B279 /* HortfruitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HortfruitsTableViewCell.xib; sourceTree = "<group>"; };
 		D16DB9AE24E6BD7900B2B279 /* HortfruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HortfruitsViewController.swift; sourceTree = "<group>"; };
+		D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecionadosTableViewCell.swift; sourceTree = "<group>"; };
+		D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelecionadosTableViewCell.xib; sourceTree = "<group>"; };
 		D19D95D424E57252007701C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTelaDeCadastroViewController.swift; sourceTree = "<group>"; };
 		D19D95D824E5841A007701C4 /* SegundaTelaDeCadastroViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaTelaDeCadastroViewControllerViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 			children = (
 				D16DB9AA24E6B9DA00B2B279 /* HortfruitsTableViewCell.swift */,
 				D16DB9AB24E6B9DA00B2B279 /* HortfruitsTableViewCell.xib */,
+				D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */,
+				D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */,
 				D16DB9A524E6B93700B2B279 /* HortfruitsCollectionViewCell.xib in Resources */,
 				88051B2824D1A39100339FE9 /* Main.storyboard in Resources */,
+				D16DB9B324E6E30900B2B279 /* SelecionadosTableViewCell.xib in Resources */,
 				88359C9424E41FED0073628A /* PedidosVendedor.storyboard in Resources */,
 				D16DB9AD24E6B9DA00B2B279 /* HortfruitsTableViewCell.xib in Resources */,
 				88359C9824E4200E0073628A /* TabPerfilVendedor.storyboard in Resources */,
@@ -356,6 +363,7 @@
 				D19FE68524E4336A007D138A /* Endereco.swift in Sources */,
 				D16DB9AF24E6BD7900B2B279 /* HortfruitsViewController.swift in Sources */,
 				D16DB9A424E6B93700B2B279 /* HortfruitsCollectionViewCell.swift in Sources */,
+				D16DB9B224E6E30900B2B279 /* SelecionadosTableViewCell.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8GN6S9CHL7;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8GN6S9CHL7;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
