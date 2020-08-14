@@ -157,9 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				D19D95D324E57228007701C4 /* Comprador */,
-				88051B2424D1A39100339FE9 /* ViewController.swift */,
 				88B8423624E6D47C00E21123 /* Vendedor */,
-				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
+				88051B2424D1A39100339FE9 /* ViewController.swift */,
 				88B8422E24E6D40300E21123 /* TabAnuncioVendedorViewController.swift */,
 			);
 			path = Controller;
@@ -203,9 +202,10 @@
 		88B8423624E6D47C00E21123 /* Vendedor */ = {
 			isa = PBXGroup;
 			children = (
+				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
 				88B8423124E6D47300E21123 /* Cadastro1VendedorViewController.swift */,
-				88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */,
 				88B8423224E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift */,
+				88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */,
 			);
 			path = Vendedor;
 			sourceTree = "<group>";
