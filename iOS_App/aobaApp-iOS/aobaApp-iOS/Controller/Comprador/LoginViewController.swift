@@ -55,8 +55,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         btnEntrarComApple.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         btnEntrarComApple.layer.cornerRadius = 5.0
     }
-
-    
-    
-    
 }
