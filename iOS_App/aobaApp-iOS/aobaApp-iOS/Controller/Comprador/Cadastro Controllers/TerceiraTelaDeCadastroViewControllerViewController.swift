@@ -21,11 +21,4 @@ class TerceiraTelaDeCadastroViewControllerViewController: UIViewController {
         btnCadastrar.layer.cornerRadius = 5.0
     }
     
-    @IBAction func btnCadastrarPressed(_ sender: Any) {
-
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
-        
-        
-    }
-    
 }

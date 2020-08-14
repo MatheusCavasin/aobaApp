@@ -25,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vao-pf-YuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-551" y="137"/>
+            <point key="canvasLocation" x="-552" y="121"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="v1x-wH-lQK">
@@ -76,6 +76,9 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nfi-bR-JFb" kind="presentation" modalPresentationStyle="fullScreen" id="58a-Bu-vT4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu a senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBe-Nf-uQn">
                                 <rect key="frame" x="133" y="504" width="148" height="21"/>
@@ -156,7 +159,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6A-YC-WJP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="137"/>
+            <point key="canvasLocation" x="288" y="137"/>
+        </scene>
+        <!--PrincipalComprador-->
+        <scene sceneID="Oxx-ol-3od">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PrincipalComprador" id="nfi-bR-JFb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ca5-7I-Mmu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sX-va-Mqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="552"/>
         </scene>
         <!--Cadastro-->
         <scene sceneID="MLM-Tz-NDp">
@@ -417,7 +430,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnCadastrarPressed:" destination="jyB-kA-2Wp" eventType="touchUpInside" id="mWk-r4-1qF"/>
+                                    <segue destination="nfi-bR-JFb" kind="presentation" modalPresentationStyle="fullScreen" id="NIA-XQ-6sW"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="340" placeholderIntrinsicHeight="44" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TaF-HE-0zA">
@@ -468,6 +481,9 @@
             <point key="canvasLocation" x="2913" y="137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NIA-XQ-6sW"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="cadastro-comerciante1" width="161" height="126"/>
