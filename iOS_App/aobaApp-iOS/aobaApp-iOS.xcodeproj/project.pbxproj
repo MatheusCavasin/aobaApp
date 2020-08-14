@@ -26,9 +26,13 @@
 		88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9924E421940073628A /* TabPedidosVendedor.storyboard */; };
 		88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9B24E424620073628A /* PrincipalVendedor.swift */; };
 		88359C9E24E429290073628A /* PrincipalComprador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9D24E429290073628A /* PrincipalComprador.swift */; };
+		88B8422B24E6BD5000E21123 /* TabAnuncioVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8422A24E6BD5000E21123 /* TabAnuncioVendedorViewController.swift */; };
+		88C556E724E56AD100A944AF /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C556E624E56AD100A944AF /* Comerciante.swift */; };
+		88C556E924E5825E00A944AF /* Cadastro1VendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C556E824E5825E00A944AF /* Cadastro1VendedorViewController.swift */; };
+		88C556EB24E5839800A944AF /* LoginVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C556EA24E5839800A944AF /* LoginVendedorViewController.swift */; };
+		88C556ED24E5894800A944AF /* Cadastro2VendedorViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C556EC24E5894800A944AF /* Cadastro2VendedorViewControllerViewController.swift */; };
 		D19FE67C24E4336A007D138A /* CategoriaProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE66F24E43368007D138A /* CategoriaProduto.swift */; };
 		D19FE67D24E4336A007D138A /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67024E43369007D138A /* Pedido.swift */; };
-		D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67124E43369007D138A /* Comerciante.swift */; };
 		D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67224E43369007D138A /* Anuncio.swift */; };
 		D19FE68024E4336A007D138A /* Produtor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67324E43369007D138A /* Produtor.swift */; };
 		D19FE68124E4336A007D138A /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67424E43369007D138A /* Produto.swift */; };
@@ -62,9 +66,13 @@
 		88359C9924E421940073628A /* TabPedidosVendedor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPedidosVendedor.storyboard; sourceTree = "<group>"; };
 		88359C9B24E424620073628A /* PrincipalVendedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVendedor.swift; sourceTree = "<group>"; };
 		88359C9D24E429290073628A /* PrincipalComprador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
+		88B8422A24E6BD5000E21123 /* TabAnuncioVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnuncioVendedorViewController.swift; sourceTree = "<group>"; };
+		88C556E624E56AD100A944AF /* Comerciante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comerciante.swift; sourceTree = "<group>"; };
+		88C556E824E5825E00A944AF /* Cadastro1VendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro1VendedorViewController.swift; sourceTree = "<group>"; };
+		88C556EA24E5839800A944AF /* LoginVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVendedorViewController.swift; sourceTree = "<group>"; };
+		88C556EC24E5894800A944AF /* Cadastro2VendedorViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro2VendedorViewControllerViewController.swift; sourceTree = "<group>"; };
 		D19FE66F24E43368007D138A /* CategoriaProduto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaProduto.swift; sourceTree = "<group>"; };
 		D19FE67024E43369007D138A /* Pedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
-		D19FE67124E43369007D138A /* Comerciante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comerciante.swift; path = ../../../../../Model/Comerciante.swift; sourceTree = "<group>"; };
 		D19FE67224E43369007D138A /* Anuncio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anuncio.swift; sourceTree = "<group>"; };
 		D19FE67324E43369007D138A /* Produtor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produtor.swift; sourceTree = "<group>"; };
 		D19FE67424E43369007D138A /* Produto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
@@ -121,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				D19FE67224E43369007D138A /* Anuncio.swift */,
+				88C556E624E56AD100A944AF /* Comerciante.swift */,
 				D19FE66F24E43368007D138A /* CategoriaProduto.swift */,
 				D19FE67B24E4336A007D138A /* Ceasa.swift */,
-				D19FE67124E43369007D138A /* Comerciante.swift */,
 				D19FE67824E43369007D138A /* Endereco.swift */,
 				D19FE67624E43369007D138A /* ItemCarrinho.swift */,
 				D19FE67024E43369007D138A /* Pedido.swift */,
@@ -142,7 +150,11 @@
 			children = (
 				88051B2424D1A39100339FE9 /* ViewController.swift */,
 				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
+				88B8422A24E6BD5000E21123 /* TabAnuncioVendedorViewController.swift */,
 				88359C9D24E429290073628A /* PrincipalComprador.swift */,
+				88C556E824E5825E00A944AF /* Cadastro1VendedorViewController.swift */,
+				88C556EC24E5894800A944AF /* Cadastro2VendedorViewControllerViewController.swift */,
+				88C556EA24E5839800A944AF /* LoginVendedorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88359C8224D9A3640073628A /* User.swift in Sources */,
+				88C556E924E5825E00A944AF /* Cadastro1VendedorViewController.swift in Sources */,
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
 				D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */,
@@ -275,12 +288,15 @@
 				D19FE67D24E4336A007D138A /* Pedido.swift in Sources */,
 				D19FE68824E4336A007D138A /* Ceasa.swift in Sources */,
 				D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */,
+				88C556EB24E5839800A944AF /* LoginVendedorViewController.swift in Sources */,
 				D19FE68124E4336A007D138A /* Produto.swift in Sources */,
-				D19FE67E24E4336A007D138A /* Comerciante.swift in Sources */,
 				D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */,
+				88C556ED24E5894800A944AF /* Cadastro2VendedorViewControllerViewController.swift in Sources */,
 				D19FE68424E4336A007D138A /* StatusItem.swift in Sources */,
+				88C556E724E56AD100A944AF /* Comerciante.swift in Sources */,
 				D19FE68524E4336A007D138A /* Endereco.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
+				88B8422B24E6BD5000E21123 /* TabAnuncioVendedorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
