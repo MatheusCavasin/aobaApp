@@ -254,7 +254,6 @@
         <!--Cadastro-->
         <scene sceneID="hRe-4H-C2E">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-SG-Iua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="lFk-rT-w8F" customClass="SegundaTelaDeCadastroViewControllerViewController" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DSA-WO-nGA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -355,13 +354,13 @@
                         <outlet property="btnProximo" destination="bRg-Zq-fCm" id="pOA-M4-k3i"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-SG-Iua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2087" y="137"/>
         </scene>
         <!--Cadastro-->
         <scene sceneID="Xcr-hL-eiy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3T6-Gd-gRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="jyB-kA-2Wp" customClass="TerceiraTelaDeCadastroViewControllerViewController" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mkh-ib-r1w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -462,6 +461,7 @@
                         <outlet property="btnCadastrar" destination="NTL-92-LzB" id="27m-Hc-dbh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T6-Gd-gRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2913" y="137"/>
         </scene>

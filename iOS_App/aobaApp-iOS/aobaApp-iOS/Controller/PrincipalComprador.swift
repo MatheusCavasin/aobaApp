@@ -24,11 +24,11 @@ class PrincipalComprador: UITabBarController {
     
     func setUp() {
         
-        let storyboard = UIStoryboard(name: "TabPedidosComprador", bundle: nil)
-        let storyboard1 = UIStoryboard(name: "TabHortifruitComprador", bundle: nil)
+        let storyboard1 = UIStoryboard(name: "TabPedidosComprador", bundle: nil)
+        let storyboard = UIStoryboard(name: "TabHortifruitComprador", bundle: nil)
         
-        let firstBookTableVc = storyboard.instantiateViewController(withIdentifier: "TabPedidosComprador")
-        let secondBookTableVc = storyboard1.instantiateViewController(withIdentifier: "TabHortifruitComprador")
+        let firstBookTableVc = storyboard.instantiateViewController(withIdentifier: "TabHortifruitComprador")
+        let secondBookTableVc = storyboard1.instantiateViewController(withIdentifier: "TabPedidosComprador")
         
         //configure the view controllers here...
         
@@ -37,7 +37,7 @@ class PrincipalComprador: UITabBarController {
         //        tabBar.items?[0].image = [first tab bar image]
         //        tabBar.items?[1].image = [second tab bar image]
         
-        tabBar.items?[0].title = "Anuncios"
+        tabBar.items?[0].title = "Hortfruits"
         tabBar.items?[1].title = "Pedidos"
     }
 }
