@@ -20,7 +20,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setBtnCadastro()
         setBtnEntrar()
         setEntrarComApple()
@@ -46,7 +45,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setBtnEntrar() {
-        btnCadastro.layer.cornerRadius = 5.0
+        btnEntrar.layer.cornerRadius = 5.0
     }
     
     

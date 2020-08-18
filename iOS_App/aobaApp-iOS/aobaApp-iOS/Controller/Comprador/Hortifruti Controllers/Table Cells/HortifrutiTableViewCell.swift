@@ -1,5 +1,5 @@
 //
-//  HortfruitsTableViewCell.swift
+//  HortifrurisTableViewCell.swift
 //  aobaApp-iOS
 //
 //  Created by Carlos Modinez on 14/08/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class HortfruitsTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
 
-    static let identifier = "HortfruitsTableViewCell"
+    static let identifier = "HortifrutiTableViewCell"
     static func nib() -> UINib {
-        return UINib(nibName: "HortfruitsTableViewCell",
+        return UINib(nibName: "HortifrutiTableViewCell",
                      bundle: nil)
     }
     
@@ -24,7 +24,7 @@ class HortfruitsTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.register(HortfruitsCollectionViewCell.nib(), forCellWithReuseIdentifier: HortfruitsCollectionViewCell.identifier)
+        collectionView.register(HortifrutiCollectionViewCell.nib(), forCellWithReuseIdentifier: HortifrutiCollectionViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -45,9 +45,9 @@ class HortfruitsTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HortfruitsCollectionViewCell.identifier, for: indexPath) as! HortfruitsCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HortifrutiCollectionViewCell.identifier, for: indexPath) as! HortifrutiCollectionViewCell
         
-        cell.configure(name: "abacaxi", imageName: "fruta-abacaxi")
+        cell.configure(name: "Abacaxi", imageName: "fruta-abacaxi")
         return cell
     }
     

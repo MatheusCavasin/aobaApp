@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HortfruitsCollectionViewCell: UICollectionViewCell {
+class HortifrutiCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var name: UILabel!
     @IBOutlet var image: UIImageView!
     
-    static let identifier = "HortfruitsCollectionViewCell"
+    static let identifier = "HortifrutiCollectionViewCell"
     static func nib() -> UINib {
-        return UINib(nibName: "HortfruitsCollectionViewCell",
+        return UINib(nibName: "HortifrutiCollectionViewCell",
                      bundle: nil)
     }
     override func awakeFromNib() {

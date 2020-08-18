@@ -10,7 +10,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TGs-bm-Nl2">
             <objects>
-                <navigationController storyboardIdentifier="TabHortifruitComprador" id="NPs-xx-Zrm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TabHortifrutiComprador" id="NPs-xx-Zrm" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NYO-Lw-gjW">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,15 +23,15 @@
             </objects>
             <point key="canvasLocation" x="-1565" y="-22"/>
         </scene>
-        <!--Hortfruits-->
+        <!--Hortifruti-->
         <scene sceneID="a6x-RW-gZj">
             <objects>
-                <viewController id="sI2-BX-5ce" customClass="HortfruitsViewController" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sI2-BX-5ce" customClass="HortifrutiViewController" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bk-iK-afS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-47-Kmi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-47-Kmi">
                                 <rect key="frame" x="0.0" y="53" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -45,7 +45,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="863-nn-Tdt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hortfruits" id="52G-cp-bU4">
+                    <navigationItem key="navigationItem" title="Hortifruti" id="52G-cp-bU4">
                         <barButtonItem key="backBarButtonItem" title="voltar" id="AUc-kw-7An"/>
                     </navigationItem>
                     <connections>

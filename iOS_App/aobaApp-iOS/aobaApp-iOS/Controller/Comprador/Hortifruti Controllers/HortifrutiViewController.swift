@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HortfruitsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // TableView
-        tableView.register(HortfruitsTableViewCell.nib(), forCellReuseIdentifier: HortfruitsTableViewCell.identifier)
+        tableView.register(HortifrutiTableViewCell.nib(), forCellReuseIdentifier: HortifrutiTableViewCell.identifier)
         tableView.register(SelecionadosTableViewCell.nib(), forCellReuseIdentifier: SelecionadosTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
@@ -43,7 +43,7 @@ class HortfruitsViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: HortfruitsTableViewCell.identifier, for: indexPath) as! HortfruitsTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: HortifrutiTableViewCell.identifier, for: indexPath) as! HortifrutiTableViewCell
             
             if indexPath.row == 1 {
                 cell.configure(title: "Frutas")
