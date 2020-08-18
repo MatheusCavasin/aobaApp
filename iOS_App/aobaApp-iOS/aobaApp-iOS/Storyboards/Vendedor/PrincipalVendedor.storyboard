@@ -28,7 +28,7 @@
         <!--TabAnuncioVendedor-->
         <scene sceneID="POf-5F-x8R">
             <objects>
-                <viewControllerPlaceholder storyboardName="TabAnuncioVendedor" id="CJN-hj-P3i" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="TabAnuncioVendedor" storyboardName="TabAnuncioVendedor" id="CJN-hj-P3i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="WBD-GW-IVI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ko-rS-p7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
