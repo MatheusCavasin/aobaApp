@@ -15,7 +15,7 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
     
     @IBOutlet weak var CriarAnuncioButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +24,8 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
         CriarAnuncioButton.layer.borderColor = #colorLiteral(red: 1, green: 0.5716887116, blue: 0.1306569278, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
+
         
-        // Do any additional setup after loading the view.
     }
     
     
