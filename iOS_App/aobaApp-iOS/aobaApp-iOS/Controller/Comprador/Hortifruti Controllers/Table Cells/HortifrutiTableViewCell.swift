@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
 class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     
 
     static let identifier = "HortifrutiTableViewCell"
@@ -20,6 +20,10 @@ class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var title: UILabel!
+    var navigationController: UINavigationController!
+    
+    
+    public var produtos: [Dictionary<String, String>]!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,32 +31,39 @@ class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         collectionView.register(HortifrutiCollectionViewCell.nib(), forCellWithReuseIdentifier: HortifrutiCollectionViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
     }
     
-    func configure(title: String) {
+    func configure(title: String, produtos: [Dictionary<String, String>]) {
         self.title.text = title
+        self.produtos = produtos
     }
     
     // Collection view inside table row
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return produtos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HortifrutiCollectionViewCell.identifier, for: indexPath) as! HortifrutiCollectionViewCell
-        
-        cell.configure(name: "Abacaxi", imageName: "fruta-abacaxi")
+        cell.configure(name: produtos[indexPath.row]["name"]!, imageName: produtos[indexPath.row]["image-name"]!)
         return cell
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 139, height: 118)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let produtosViewController: ProdutoTableViewController!
+        let produtosView = UIStoryboard(name: "TabHortifrutiComprador", bundle: nil)
+        
+        produtosViewController = produtosView.instantiateViewController(identifier: "produtos") as? ProdutoTableViewController
+      
+        self.navigationController.show(produtosViewController, sender: self)
+        produtosViewController.navigationItem.title = produtos[indexPath.row]["name"]!
     }
 }

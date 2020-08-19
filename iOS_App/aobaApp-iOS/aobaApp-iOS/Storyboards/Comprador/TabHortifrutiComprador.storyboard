@@ -10,11 +10,16 @@
         <!--Navigation Controller-->
         <scene sceneID="TGs-bm-Nl2">
             <objects>
-                <navigationController storyboardIdentifier="TabHortifrutiComprador" id="NPs-xx-Zrm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TabHortifrutiComprador" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="NPs-xx-Zrm" sceneMemberID="viewController">
+                    <value key="contentSizeForViewInPopover" type="size" width="0.0" height="0.0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NYO-Lw-gjW">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kI2-eE-AjP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="sI2-BX-5ce" kind="relationship" relationship="rootViewController" id="N9B-eR-eja"/>
                     </connections>
@@ -32,22 +37,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-47-Kmi">
-                                <rect key="frame" x="0.0" y="53" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qgy-47-Kmi" firstAttribute="centerY" secondItem="863-nn-Tdt" secondAttribute="centerY" id="E03-CV-APy"/>
                             <constraint firstItem="qgy-47-Kmi" firstAttribute="width" secondItem="5bk-iK-afS" secondAttribute="width" id="VTM-og-1ze"/>
-                            <constraint firstItem="qgy-47-Kmi" firstAttribute="height" secondItem="5bk-iK-afS" secondAttribute="height" id="obe-Ni-ev5"/>
+                            <constraint firstItem="qgy-47-Kmi" firstAttribute="top" secondItem="863-nn-Tdt" secondAttribute="top" id="d4V-QW-5BO"/>
+                            <constraint firstItem="qgy-47-Kmi" firstAttribute="height" secondItem="863-nn-Tdt" secondAttribute="height" id="div-dC-Asr"/>
                             <constraint firstItem="qgy-47-Kmi" firstAttribute="centerX" secondItem="863-nn-Tdt" secondAttribute="centerX" id="sLN-LZ-57s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="863-nn-Tdt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hortifruti" id="52G-cp-bU4">
-                        <barButtonItem key="backBarButtonItem" title="voltar" id="AUc-kw-7An"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Hortifruti" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="52G-cp-bU4"/>
                     <connections>
                         <outlet property="tableView" destination="qgy-47-Kmi" id="SGP-4T-N71"/>
                     </connections>
@@ -55,6 +58,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h41-TO-e27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-688.40579710144937" y="-21.428571428571427"/>
+        </scene>
+        <!--Produto Table View Controller-->
+        <scene sceneID="BXd-Cn-kAn">
+            <objects>
+                <tableViewController storyboardIdentifier="produtos" id="LbF-6n-oYO" customClass="ProdutoTableViewController" customModule="aobaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="N2R-ug-7PV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="LbF-6n-oYO" id="vpu-60-hlS"/>
+                            <outlet property="delegate" destination="LbF-6n-oYO" id="7Af-Q7-x42"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzO-5v-05E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-14"/>
         </scene>
     </scenes>
 </document>

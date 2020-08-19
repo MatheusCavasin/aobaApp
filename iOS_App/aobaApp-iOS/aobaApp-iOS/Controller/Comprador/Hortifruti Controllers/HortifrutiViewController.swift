@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import Foundation
 
 class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet weak var tableView: UITableView!
+    var frutas: [Dictionary<String, String>]!
+    var verduras: [Dictionary<String, String>]!
+    var legumes: [Dictionary<String, String>]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // TableView
         tableView.register(HortifrutiTableViewCell.nib(), forCellReuseIdentifier: HortifrutiTableViewCell.identifier)
-        tableView.register(SelecionadosTableViewCell.nib(), forCellReuseIdentifier: SelecionadosTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
@@ -25,6 +29,31 @@ class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableVi
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
         
+        frutas = [
+            ["name": "Abacaxi", "image-name": "fruta-abacaxi"],
+            ["name": "Abacate", "image-name": "fruta-abacate"],
+            ["name": "Mamão", "image-name": "fruta-mamao"],
+            ["name": "Maça", "image-name": "fruta-maca"],
+            ["name": "Banana", "image-name": "fruta-banana"],
+            ["name": "Laranja", "image-name": "fruta-laranja"],
+        ]
+        
+        verduras = [
+            ["name": "Couve-flor", "image-name": "verdura-couveflor"],
+            ["name": "Brocolis", "image-name": "verdura-brocolis"],
+            ["name": "Alface", "image-name": "verdura-alface"],
+        ]
+        
+        legumes = [
+            ["name": "Beterraba", "image-name": "legume-beterraba"],
+            ["name": "Milho", "image-name": "legume-milho"],
+            ["name": "Rabanete", "image-name": "legume-rabanete"],
+        ]
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
     }
     
     
@@ -38,7 +67,14 @@ class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableVi
         
         if indexPath.row == 0 {
             // Para a primeira célula escrito "Selecionados para você"
-            let cell = tableView.dequeueReusableCell(withIdentifier: SelecionadosTableViewCell.identifier, for: indexPath) as! SelecionadosTableViewCell
+            let cell = UITableViewCell()
+            
+            let label = UILabel()
+            label.frame = CGRect(x:20, y: 9, width:280, height:26.5)
+            label.text = "Selecionados para você"
+            label.font = UIFont(name: "HelveticaNeue-Medium", size: 22)
+            
+            cell.addSubview(label)
             return cell
         }
         
@@ -46,11 +82,14 @@ class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableVi
             let cell = tableView.dequeueReusableCell(withIdentifier: HortifrutiTableViewCell.identifier, for: indexPath) as! HortifrutiTableViewCell
             
             if indexPath.row == 1 {
-                cell.configure(title: "Frutas")
+                cell.configure(title: "Frutas", produtos: frutas)
+                cell.navigationController = self.navigationController
             } else if indexPath.row == 2 {
-                cell.configure(title: "Verduras")
+                cell.configure(title: "Verduras", produtos: verduras)
+                cell.navigationController = self.navigationController
             } else {
-                cell.configure(title: "Legumes")
+                cell.configure(title: "Legumes", produtos: legumes)
+                cell.navigationController = self.navigationController
             }
             return cell
         }

@@ -38,8 +38,6 @@
 		D16DB9AC24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9AA24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift */; };
 		D16DB9AD24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16DB9AB24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib */; };
 		D16DB9AF24E6BD7900B2B279 /* HortifrutiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9AE24E6BD7900B2B279 /* HortifrutiViewController.swift */; };
-		D16DB9B224E6E30900B2B279 /* SelecionadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */; };
-		D16DB9B324E6E30900B2B279 /* SelecionadosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */; };
 		D16DB9D324E6FCE400B2B279 /* Comerciante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9D224E6FCE400B2B279 /* Comerciante.swift */; };
 		D19D95D524E57252007701C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D424E57252007701C4 /* LoginViewController.swift */; };
 		D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D95D624E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift */; };
@@ -56,6 +54,10 @@
 		D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67924E43369007D138A /* TipoComercio.swift */; };
 		D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67A24E4336A007D138A /* TipoProduto.swift */; };
 		D19FE68824E4336A007D138A /* Ceasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FE67B24E4336A007D138A /* Ceasa.swift */; };
+		D1CB876724EC1B4900266EC0 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB876624EC1B4900266EC0 /* Singleton.swift */; };
+		D1CB876924EC21CD00266EC0 /* ProdutoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */; };
+		D1CB876C24EC32A000266EC0 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */; };
+		D1CB876D24EC32A000266EC0 /* ProdutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,8 +95,6 @@
 		D16DB9AA24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HortifrutiTableViewCell.swift; sourceTree = "<group>"; };
 		D16DB9AB24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HortifrutiTableViewCell.xib; sourceTree = "<group>"; };
 		D16DB9AE24E6BD7900B2B279 /* HortifrutiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HortifrutiViewController.swift; sourceTree = "<group>"; };
-		D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecionadosTableViewCell.swift; sourceTree = "<group>"; };
-		D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelecionadosTableViewCell.xib; sourceTree = "<group>"; };
 		D16DB9D224E6FCE400B2B279 /* Comerciante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comerciante.swift; sourceTree = "<group>"; };
 		D16DB9D424E6FD0300B2B279 /* TabAnuncioVendedorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAnuncioVendedorViewController.swift; sourceTree = "<group>"; };
 		D19D95D424E57252007701C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +112,10 @@
 		D19FE67924E43369007D138A /* TipoComercio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoComercio.swift; sourceTree = "<group>"; };
 		D19FE67A24E4336A007D138A /* TipoProduto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoProduto.swift; sourceTree = "<group>"; };
 		D19FE67B24E4336A007D138A /* Ceasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ceasa.swift; sourceTree = "<group>"; };
+		D1CB876624EC1B4900266EC0 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewController.swift; sourceTree = "<group>"; };
+		D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
+		D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProdutoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 				D19FE67924E43369007D138A /* TipoComercio.swift */,
 				D19FE67A24E4336A007D138A /* TipoProduto.swift */,
 				88359C8124D9A3640073628A /* User.swift */,
+				D1CB876624EC1B4900266EC0 /* Singleton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				D16DB9A724E6B95300B2B279 /* Table Cells */,
 				D16DB9A624E6B94700B2B279 /* Collection Cells */,
 				D16DB9AE24E6BD7900B2B279 /* HortifrutiViewController.swift */,
+				D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */,
 			);
 			path = "Hortifruti Controllers";
 			sourceTree = "<group>";
@@ -270,8 +276,8 @@
 			children = (
 				D16DB9AA24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift */,
 				D16DB9AB24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib */,
-				D16DB9B024E6E30900B2B279 /* SelecionadosTableViewCell.swift */,
-				D16DB9B124E6E30900B2B279 /* SelecionadosTableViewCell.xib */,
+				D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */,
+				D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				TargetAttributes = {
 					88051B1C24D1A39100339FE9 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -362,9 +369,9 @@
 				88051B2A24D1A39300339FE9 /* Assets.xcassets in Resources */,
 				88359C9624E420060073628A /* TabAnuncioVendedor.storyboard in Resources */,
 				88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */,
+				D1CB876D24EC32A000266EC0 /* ProdutoTableViewCell.xib in Resources */,
 				D16DB9A524E6B93700B2B279 /* HortifrutiCollectionViewCell.xib in Resources */,
 				88051B2824D1A39100339FE9 /* Main.storyboard in Resources */,
-				D16DB9B324E6E30900B2B279 /* SelecionadosTableViewCell.xib in Resources */,
 				88359C9424E41FED0073628A /* PedidosVendedor.storyboard in Resources */,
 				D16DB9AD24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib in Resources */,
 				88359C9824E4200E0073628A /* TabPerfilVendedor.storyboard in Resources */,
@@ -385,6 +392,7 @@
 				88051B2524D1A39100339FE9 /* ViewController.swift in Sources */,
 				88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */,
 				D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */,
+				D1CB876C24EC32A000266EC0 /* ProdutoTableViewCell.swift in Sources */,
 				D19D95DB24E5842B007701C4 /* TerceiraTelaDeCadastroViewControllerViewController.swift in Sources */,
 				D16DB9AC24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift in Sources */,
 				D10D4BBA24EC0A87003235B4 /* PrincipalComprador.swift in Sources */,
@@ -394,7 +402,9 @@
 				D19FE68024E4336A007D138A /* Produtor.swift in Sources */,
 				D19FE68324E4336A007D138A /* ItemCarrinho.swift in Sources */,
 				D19FE67C24E4336A007D138A /* CategoriaProduto.swift in Sources */,
+				D1CB876924EC21CD00266EC0 /* ProdutoTableViewController.swift in Sources */,
 				D19FE67D24E4336A007D138A /* Pedido.swift in Sources */,
+				D1CB876724EC1B4900266EC0 /* Singleton.swift in Sources */,
 				D19FE68824E4336A007D138A /* Ceasa.swift in Sources */,
 				D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */,
 				D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */,
@@ -411,7 +421,6 @@
 				D19FE68524E4336A007D138A /* Endereco.swift in Sources */,
 				D16DB9AF24E6BD7900B2B279 /* HortifrutiViewController.swift in Sources */,
 				D16DB9A424E6B93700B2B279 /* HortifrutiCollectionViewCell.swift in Sources */,
-				D16DB9B224E6E30900B2B279 /* SelecionadosTableViewCell.swift in Sources */,
 				88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
@@ -565,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.aobaApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";

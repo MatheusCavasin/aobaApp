@@ -50,8 +50,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     func setEntrarComApple() {
-        btnEntrarComApple.layer.borderWidth = 2.0
-        btnEntrarComApple.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        btnEntrarComApple.layer.borderWidth = 0.5
+        btnEntrarComApple.layer.borderColor = #colorLiteral(red: 0.9176470588, green: 0.9058823529, blue: 0.9058823529, alpha: 1)
         btnEntrarComApple.layer.cornerRadius = 5.0
     }
 }
