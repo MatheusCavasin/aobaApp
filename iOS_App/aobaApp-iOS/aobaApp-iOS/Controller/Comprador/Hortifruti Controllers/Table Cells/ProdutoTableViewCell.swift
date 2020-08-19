@@ -40,18 +40,19 @@ class ProdutoTableViewCell: UITableViewCell {
     }
       
     
-    func config(produto: Dictionary<String, String>) {
-        titulo.text = produto["titulo"] ?? "??"
-        imagem.image = UIImage(named: produto["imagem"] ?? "logo")
-        preco.text = "R$ " + String(produto["preco"] ?? "0,00") + " caixa"
-        quantidadeDisponivel.text = String(produto["quantidadeDisponiel"] ?? "0.0") + " caixas disponíveis"
-        avalicaoDoProdutor.text = String(produto["avaliação do produtor"]!)
-    }
+    func config(produto: Dictionary<String, Any>) {
+        titulo.text = produto["titulo"] as? String
+        
+        // Se não achar a imagem, mostra o logo
+        imagem.image = UIImage(named: produto["imagem"] as? String ?? "logo") ?? UIImage(named: "logo")
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        //Ajusta para as casas decimais e troca o ponto por virgula
+        var precoStr: String = String(format: "%.2f", produto["preco"] as! CVarArg)
+        precoStr = precoStr.replacingOccurrences(of: ".", with: ",", options: .literal, range: nil)
+        preco.text = "R$ \(precoStr) caixa"
+        
+        quantidadeDisponivel.text = "\(produto["quantidadeDisponiel"] ?? "---") + caixas disponíveis"
+        avalicaoDoProdutor.text = "\(produto["avaliação do produtor"]!)"
     }
     
     

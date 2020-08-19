@@ -48,7 +48,7 @@
                 <outlet property="collectionView" destination="GJa-aM-eEE" id="llY-jL-ddd"/>
                 <outlet property="title" destination="YkG-i9-Sfj" id="sfB-ZR-AX8"/>
             </connections>
-            <point key="canvasLocation" x="60.869565217391312" y="129.24107142857142"/>
+            <point key="canvasLocation" x="60.869565217391312" y="128.90625"/>
         </tableViewCell>
     </objects>
 </document>

@@ -62,8 +62,15 @@ class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         let produtosView = UIStoryboard(name: "TabHortifrutiComprador", bundle: nil)
         
         produtosViewController = produtosView.instantiateViewController(identifier: "produtos") as? ProdutoTableViewController
-      
+        
+        // Melhora a navegação 
+        collectionView.cellForItem(at: indexPath)?.isSelected = false
+        
         self.navigationController.show(produtosViewController, sender: self)
         produtosViewController.navigationItem.title = produtos[indexPath.row]["name"]!
+        produtosViewController.produtos = Singleton.shared.macas
+        
+        
+
     }
 }
