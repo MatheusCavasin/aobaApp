@@ -67,6 +67,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="buttonCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="122" id="iKw-AA-he6" customClass="ButtonTableViewCell" customModule="aobaApp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="122"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKw-AA-he6" id="T2Q-Hq-6Fd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="button" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNV-iH-jEy">
+                                            <rect key="frame" x="44" y="39" width="326" height="44"/>
+                                            <color key="backgroundColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Finalizar compra">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MNV-iH-jEy" firstAttribute="height" secondItem="T2Q-Hq-6Fd" secondAttribute="height" multiplier="0.360656" id="13t-jQ-RSh"/>
+                                        <constraint firstItem="MNV-iH-jEy" firstAttribute="leading" secondItem="T2Q-Hq-6Fd" secondAttribute="leading" constant="44" id="ByH-pU-38m"/>
+                                        <constraint firstAttribute="trailing" secondItem="MNV-iH-jEy" secondAttribute="trailing" constant="44" id="NXT-Pg-nSg"/>
+                                        <constraint firstItem="MNV-iH-jEy" firstAttribute="centerY" secondItem="T2Q-Hq-6Fd" secondAttribute="centerY" id="oca-4o-LZE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="LbF-6n-oYO" id="vpu-60-hlS"/>
                             <outlet property="delegate" destination="LbF-6n-oYO" id="7Af-Q7-x42"/>
@@ -75,7 +102,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzO-5v-05E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="-14"/>
+            <point key="canvasLocation" x="110.14492753623189" y="-14.0625"/>
         </scene>
         <!--Carrinho View Controller-->
         <scene sceneID="mHa-N8-aW4">

@@ -13,16 +13,7 @@ class DetalhesDoProdutoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
     }
   
-    override func viewDidDisappear(_ animated: Bool) {
-        self.dismiss(animated: true, completion: nil)
-    }
-        
-        
-    override func viewWillDisappear(_ animated: Bool) {
-        self.dismiss(animated: true, completion: nil)
-    }
-
+    
 }

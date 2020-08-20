@@ -223,9 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				88359C8B24E41D670073628A /* CadastroComprador.storyboard */,
-				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
-				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
 				88359C8F24E41F8C0073628A /* TabHortifrutiComprador.storyboard */,
+				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
+				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
 			);
 			path = Comprador;
 			sourceTree = "<group>";

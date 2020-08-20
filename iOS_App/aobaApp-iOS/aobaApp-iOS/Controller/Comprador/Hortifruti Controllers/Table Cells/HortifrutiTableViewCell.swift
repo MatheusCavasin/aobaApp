@@ -70,7 +70,6 @@ class HortifrutiTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         produtosViewController.navigationItem.title = produtos[indexPath.row]["name"]!
         produtosViewController.produtos = Singleton.shared.macas
         
-        
 
     }
 }
