@@ -65,6 +65,7 @@
 		D1CB876924EC21CD00266EC0 /* ProdutoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */; };
 		D1CB876C24EC32A000266EC0 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */; };
 		D1CB876D24EC32A000266EC0 /* ProdutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */; };
+		D1E9C28224EFF37A0002B9B6 /* Celulas do carrinho.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9C28124EFF37A0002B9B6 /* Celulas do carrinho.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewController.swift; sourceTree = "<group>"; };
 		D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
 		D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProdutoTableViewCell.xib; sourceTree = "<group>"; };
+		D1E9C28124EFF37A0002B9B6 /* Celulas do carrinho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Celulas do carrinho.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,10 +245,10 @@
 		88359C8E24E41F4F0073628A /* Comprador */ = {
 			isa = PBXGroup;
 			children = (
+				88359C8F24E41F8C0073628A /* TabHortifrutiComprador.storyboard */,
 				88359C8B24E41D670073628A /* CadastroComprador.storyboard */,
 				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
 				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
-				88359C8F24E41F8C0073628A /* TabHortifrutiComprador.storyboard */,
 				D123483724EEB6CC007095E2 /* TabPerfilComprador.storyboard */,
 			);
 			path = Comprador;
@@ -282,10 +284,10 @@
 			children = (
 				D16DB9A724E6B95300B2B279 /* Table Cells */,
 				D16DB9A624E6B94700B2B279 /* Collection Cells */,
+				D14CB6E124ED6B7C00CA9B3F /* CarrinhoViewController.swift */,
 				D14CB6E324ED6D0600CA9B3F /* DetalhesDoProdutoViewController.swift */,
 				D16DB9AE24E6BD7900B2B279 /* HortifrutiViewController.swift */,
 				D1CB876824EC21CD00266EC0 /* ProdutoTableViewController.swift */,
-				D14CB6E124ED6B7C00CA9B3F /* CarrinhoViewController.swift */,
 			);
 			path = "Hortifruti Controllers";
 			sourceTree = "<group>";
@@ -307,6 +309,7 @@
 				D1CB876A24EC32A000266EC0 /* ProdutoTableViewCell.swift */,
 				D1CB876B24EC32A000266EC0 /* ProdutoTableViewCell.xib */,
 				D123483924EEC540007095E2 /* Celulas do detalhe do produto.swift */,
+				D1E9C28124EFF37A0002B9B6 /* Celulas do carrinho.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				88B8423E24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift in Sources */,
 				88B8423A24E6D79100E21123 /* AnuncioTableViewCell.swift in Sources */,
 				D19FE68624E4336A007D138A /* TipoComercio.swift in Sources */,
+				D1E9C28224EFF37A0002B9B6 /* Celulas do carrinho.swift in Sources */,
 				D14CB6E224ED6B7C00CA9B3F /* CarrinhoViewController.swift in Sources */,
 				886227A324E6DFBF00605E61 /* AnuncioVendedorTableViewCell.swift in Sources */,
 				D19FE68424E4336A007D138A /* StatusItem.swift in Sources */,

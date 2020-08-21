@@ -15,6 +15,10 @@ class ImageTableViewCell: UITableViewCell {
         imgProduto.layer.cornerRadius = 5.0
     }
     
+    public func congif(imageName: String) {
+        self.imgProduto.image = UIImage(named: imageName)
+    }
+    
 }
 
 class TitleTableViewCell: UITableViewCell {
@@ -23,7 +27,11 @@ class TitleTableViewCell: UITableViewCell {
     
     
     override func awakeFromNib() {
-        
+    }
+    
+    public func config(nome: String, preco: Float) {
+        self.nomeDoProduto.text = nome
+        self.precoDoProduto.text = String(format: "%.2f", preco).replacingOccurrences(of: ".", with: ",")
     }
 }
 
@@ -38,34 +46,48 @@ class FazendaTableViewCell: UITableViewCell {
         viwBackground.layer.borderWidth = 0.5
         viwBackground.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     }
+    
+    public func config(nomeFazenda: String, avaliacao: Float) {
+        self.lblFazenda.text = nomeFazenda
+        self.lblAvaliacao.text = String(format: "%.1f", avaliacao)
+    }
 }
 
 
-
 class CaixasDisponivelsTableViewCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var lblQuantidade: UILabel!
-    
-    override func awakeFromNib() {
         
+    @IBOutlet weak var lblQuantidade: UILabel!
+
+    override func awakeFromNib() {
+    }
+    
+    public func config(quantidadeDisponivel: Int) {
+        self.lblQuantidade.text = "\(String(quantidadeDisponivel)) caixas disponíveis"
     }
 }
 
 class QuantidadeTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    
-    
     @IBOutlet weak var pkvQuantidade: UIPickerView!
-    var pickerData: [String] = []
+    @IBOutlet weak var btnAdicionar: UIButton!
+    
+    private var quantidade: Int = 0
+    private var pickerData: [String] = []
+    private var produto: Dictionary<String, Any> = [:]
+    public var presentView: DetalhesDoProdutoViewController!
     
     override func awakeFromNib() {
         
-        for i in 0...24 {
+    }
+    
+    public func config(produto: Dictionary<String, Any>) {
+       quantidade = produto["quantidadeDisponiel"] as! Int
+        for i in 0...quantidade {
             pickerData.append("\(i)")
         }
         self.pkvQuantidade.delegate = self
         self.pkvQuantidade.dataSource = self
+        self.produto = produto
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -80,15 +102,25 @@ class QuantidadeTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
-}
-
-class ButtonTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var btnAdicionar: UIButton!
+    @IBAction func btnAdicionarPressed(_ sender: Any) {
+        presentView.dismiss(animated: true, completion: nil)
+        let quantidadeEscolhida = pkvQuantidade.selectedRow(inComponent: 0)
+        
+        var produtos = Singleton.shared.carrinho["produtos"] as! [Dictionary<String, Any>]
+        let novoProduto: Dictionary<String, Any> = [
+            "titulo": produto["titulo"] ?? "nome da fruta",
+            "imagem": produto["imagem"] ?? "logo",
+            "preco": produto["preco"] ?? 0.00,
+            "quantidade": quantidadeEscolhida,
+        ]
+        
+        produtos.append(novoProduto)
+        Singleton.shared.carrinho["produtos"] = produtos
+    }
     
-    override func awakeFromNib() {
+    private func adicionarProduto() {
         
     }
-    @IBAction func btnAdicionarPressed(_ sender: Any) {
-    }
 }
+
