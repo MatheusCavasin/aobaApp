@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39F57E0424EFFE4D00D9FA4B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F57E0324EFFE4D00D9FA4B /* OnBoardingViewController.swift */; };
+		39F57E0724EFFF2B00D9FA4B /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F57E0624EFFF2B00D9FA4B /* Slide.swift */; };
+		39F57E0924EFFF4B00D9FA4B /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F57E0824EFFF4B00D9FA4B /* Slide.xib */; };
 		88051B2124D1A39100339FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88051B2024D1A39100339FE9 /* AppDelegate.swift */; };
 		88051B2324D1A39100339FE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88051B2224D1A39100339FE9 /* SceneDelegate.swift */; };
 		88051B2524D1A39100339FE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88051B2424D1A39100339FE9 /* ViewController.swift */; };
@@ -65,6 +68,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F57E0324EFFE4D00D9FA4B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		39F57E0624EFFF2B00D9FA4B /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		39F57E0824EFFF4B00D9FA4B /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		88051B1D24D1A39100339FE9 /* aobaApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aobaApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88051B2024D1A39100339FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88051B2224D1A39100339FE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +143,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F57E0524EFFEFA00D9FA4B /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				39F57E0324EFFE4D00D9FA4B /* OnBoardingViewController.swift */,
+				39F57E0624EFFF2B00D9FA4B /* Slide.swift */,
+				39F57E0824EFFF4B00D9FA4B /* Slide.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		88051B1424D1A39100339FE9 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +208,7 @@
 		88359C7F24D848B90073628A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				39F57E0524EFFEFA00D9FA4B /* OnBoarding */,
 				D19D95D324E57228007701C4 /* Comprador */,
 				88B8423624E6D47C00E21123 /* Vendedor */,
 				88051B2424D1A39100339FE9 /* ViewController.swift */,
@@ -390,6 +407,7 @@
 				88359C9824E4200E0073628A /* TabPerfilVendedor.storyboard in Resources */,
 				88359C9224E41FA50073628A /* TabPedidosComprador.storyboard in Resources */,
 				88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */,
+				39F57E0924EFFF4B00D9FA4B /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +440,10 @@
 				D19FE68824E4336A007D138A /* Ceasa.swift in Sources */,
 				D19FE67F24E4336A007D138A /* Anuncio.swift in Sources */,
 				D19D95D724E57E81007701C4 /* PrimeiraTelaDeCadastroViewController.swift in Sources */,
+				39F57E0724EFFF2B00D9FA4B /* Slide.swift in Sources */,
 				D19FE68124E4336A007D138A /* Produto.swift in Sources */,
 				88B8423324E6D47300E21123 /* LoginVendedorViewController.swift in Sources */,
+				39F57E0424EFFE4D00D9FA4B /* OnBoardingViewController.swift in Sources */,
 				88B8423424E6D47300E21123 /* Cadastro1VendedorViewController.swift in Sources */,
 				D19D95D924E5841A007701C4 /* SegundaTelaDeCadastroViewControllerViewController.swift in Sources */,
 				88B8423E24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift in Sources */,
@@ -583,8 +603,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,8 +624,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

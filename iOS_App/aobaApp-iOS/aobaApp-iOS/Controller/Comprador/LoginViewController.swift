@@ -23,6 +23,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         setBtnCadastro()
         setBtnEntrar()
         setEntrarComApple()
+        
+        self.hideKeyboardWhenTappedAround()
+        self.txtEmail.keyboardType = UIKeyboardType.emailAddress
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,5 +56,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         btnEntrarComApple.layer.borderWidth = 0.5
         btnEntrarComApple.layer.borderColor = #colorLiteral(red: 0.9176470588, green: 0.9058823529, blue: 0.9058823529, alpha: 1)
         btnEntrarComApple.layer.cornerRadius = 5.0
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
