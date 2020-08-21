@@ -28,8 +28,6 @@ class ProdutoTableViewController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.register(ProdutoTableViewCell.nib(), forCellReuseIdentifier: ProdutoTableViewCell.identifier)
         
-        //Botao de finalizar compra
-        
     }
     
     @objc func addTappped() {
@@ -85,6 +83,7 @@ class ProdutoTableViewController: UITableViewController {
         let detalhesDoProdutoView = UIStoryboard(name: "TabHortifrutiComprador", bundle: nil)
         detalhesDoProdutoViewController = detalhesDoProdutoView.instantiateViewController(identifier: "detalhesDoProduto") as? DetalhesDoProdutoViewController
         
+        detalhesDoProdutoViewController.produto = produtos[indexPath.row]
         self.navigationController?.showDetailViewController(detalhesDoProdutoViewController, sender: self)
     }
 }
