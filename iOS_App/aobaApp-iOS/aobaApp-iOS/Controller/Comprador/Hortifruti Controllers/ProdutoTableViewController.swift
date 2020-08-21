@@ -44,7 +44,6 @@ class ProdutoTableViewController: UITableViewController {
         
         if indexPath.row == produtos.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
-            
             return cell
         }
         
@@ -86,9 +85,6 @@ class ProdutoTableViewController: UITableViewController {
         let detalhesDoProdutoView = UIStoryboard(name: "TabHortifrutiComprador", bundle: nil)
         detalhesDoProdutoViewController = detalhesDoProdutoView.instantiateViewController(identifier: "detalhesDoProduto") as? DetalhesDoProdutoViewController
         
-        
-        
         self.navigationController?.showDetailViewController(detalhesDoProdutoViewController, sender: self)
     }
-
 }
