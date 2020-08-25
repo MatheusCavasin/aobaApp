@@ -12,6 +12,7 @@ class DetalhesDoProdutoViewController: UIViewController, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnCancelar: UIBarButtonItem!
+    var produto: Dictionary<String, Any>! = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,36 +28,38 @@ class DetalhesDoProdutoViewController: UIViewController, UITableViewDelegate, UI
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "image") as! ImageTableViewCell
+            cell.congif(imageName: produto["imagem"] as! String)
             return cell
         }
         else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "title") as! TitleTableViewCell
+            cell.config(nome: produto["titulo"] as! String, preco: Float(produto["preco"] as! Double))
             return cell
         }
         
         else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "fazenda") as! FazendaTableViewCell
+            cell.config(nomeFazenda: produto["produtor"] as! String, avaliacao: Float(produto["avaliação do produtor"] as! Double))
             return cell
         }
         
         else if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "caixasDisponiveis") as! CaixasDisponivelsTableViewCell
+            cell.config(quantidadeDisponivel: produto["quantidadeDisponiel"] as! Int)
             return cell
         }
         
-        else if indexPath.row == 4 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "quantidade") as! QuantidadeTableViewCell
-            return cell
-        }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "button") as! ButtonTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "quantidade") as! QuantidadeTableViewCell
+        cell.presentView = self
+        cell.config(produto: produto)
         return cell
     }
     
@@ -70,10 +73,8 @@ class DetalhesDoProdutoViewController: UIViewController, UITableViewDelegate, UI
             return 45
         } else if indexPath.row == 3 {
             return 80
-        } else if indexPath.row == 4 {
-            return 170
         }
-        return 100
+        return 363
         
     }
 }
