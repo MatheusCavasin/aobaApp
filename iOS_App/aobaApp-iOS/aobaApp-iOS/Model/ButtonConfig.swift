@@ -18,5 +18,6 @@ static let larguraBorda = CGFloat(2)
 // MARK: BOTÕES PREENCHIDOS
 static let raioBorda = CGFloat(5)
 static let laranja = CGColor(#colorLiteral(red: 1, green: 0.5716887116, blue: 0.1306569278, alpha: 1))
+    ///
     
 }
