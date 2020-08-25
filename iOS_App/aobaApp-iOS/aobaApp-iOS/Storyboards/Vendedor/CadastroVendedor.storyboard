@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aoba-onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="V9y-Ey-qvF">
-                                <rect key="frame" x="83" y="80" width="248" height="125"/>
+                                <rect key="frame" x="83" y="88.5" width="248" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V9y-Ey-qvF" secondAttribute="height" multiplier="248:125" id="iyV-Yh-eVB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça o login para continuar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQA-vv-r7V">
-                                <rect key="frame" x="37" y="246" width="340" height="68.5"/>
+                                <rect key="frame" x="37" y="256.5" width="340" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -129,6 +129,7 @@
                     <connections>
                         <outlet property="CriarButton" destination="YfV-3v-y2d" id="1Wm-Tp-Ibo"/>
                         <outlet property="EntrarButton" destination="UBy-wX-KeO" id="TeF-bC-RTV"/>
+                        <outlet property="emailVendedor" destination="nf4-vg-FOf" id="7ND-Tj-x7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tc-S7-BXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JO0-CD-dQM">
-                                <rect key="frame" x="37" y="408.5" width="340" height="242"/>
+                                <rect key="frame" x="37" y="418.5" width="340" height="242"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4x-MM-0bM">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="45.5"/>
@@ -172,7 +173,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi9-SH-f54">
-                                <rect key="frame" x="37" y="715.5" width="340" height="45.5"/>
+                                <rect key="frame" x="37" y="726.5" width="340" height="45.5"/>
                                 <color key="backgroundColor" red="1" green="0.4941176471" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Proximo">
@@ -183,10 +184,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cadastro-comerciante1" translatesAutoresizingMaskIntoConstraints="NO" id="G2V-bc-gc7">
-                                <rect key="frame" x="83" y="140" width="248" height="125.5"/>
+                                <rect key="frame" x="83" y="148.5" width="248" height="125.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se no aoba para vender frutas, verduras e legumes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV6-UK-XP1">
-                                <rect key="frame" x="35.5" y="292" width="343" height="72"/>
+                                <rect key="frame" x="35.5" y="301.5" width="343" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -239,7 +240,7 @@
             <objects>
                 <navigationController id="j9j-JA-rkp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ppr-YP-7eJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
