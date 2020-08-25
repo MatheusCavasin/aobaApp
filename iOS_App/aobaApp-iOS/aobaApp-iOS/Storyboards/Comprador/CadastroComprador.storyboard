@@ -25,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vao-pf-YuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="121"/>
+            <point key="canvasLocation" x="-554" y="137"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="v1x-wH-lQK">
@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="width" secondItem="fxk-7X-cCo" secondAttribute="height" multiplier="85:11" id="T65-bj-eBe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                 <connections>
                                     <outlet property="delegate" destination="pZT-zA-yBA" id="9pX-Vv-DWm"/>
                                 </connections>
@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="width" secondItem="xpp-rz-yQ4" secondAttribute="height" multiplier="85:11" id="C76-5O-r5c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSm-JZ-YTp">
                                 <rect key="frame" x="37" y="451" width="340" height="44"/>
@@ -93,6 +93,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gxB-tU-cVJ" secondAttribute="height" multiplier="163:22" id="1Aa-2y-Iel"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Criar uma nova conta">
                                     <color key="titleColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
@@ -101,8 +102,8 @@
                                     <segue destination="9Pr-cu-vMM" kind="show" id="HK5-gi-MI6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------   OU ----------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-hg-V7W">
-                                <rect key="frame" x="113" y="772" width="188" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––––– OU –––––––––" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-hg-V7W">
+                                <rect key="frame" x="117" y="772" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,7 +198,7 @@
                                     <constraint firstAttribute="width" secondItem="hJV-ze-kLF" secondAttribute="height" multiplier="85:11" id="XXm-bD-ftW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="340" placeholderIntrinsicHeight="44" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wda-Qi-rCc">
                                 <rect key="frame" x="37" y="508" width="340" height="44"/>
@@ -205,7 +206,7 @@
                                     <constraint firstAttribute="width" secondItem="wda-Qi-rCc" secondAttribute="height" multiplier="85:11" id="RLV-Eb-455"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="340" placeholderIntrinsicHeight="44" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmação de senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-ge-WuL">
                                 <rect key="frame" x="37" y="567" width="340" height="44"/>
@@ -213,7 +214,7 @@
                                     <constraint firstAttribute="width" secondItem="n4c-ge-WuL" secondAttribute="height" multiplier="85:11" id="ur7-SV-Rst"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3K-6x-NrH">
                                 <rect key="frame" x="37" y="801" width="340" height="46"/>
@@ -482,7 +483,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NIA-XQ-6sW"/>
+        <segue reference="58a-Bu-vT4"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
     <resources>

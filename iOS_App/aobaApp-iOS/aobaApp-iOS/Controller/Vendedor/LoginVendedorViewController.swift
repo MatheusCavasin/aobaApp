@@ -13,6 +13,7 @@ class LoginVendedorViewController: UIViewController {
     
     @IBOutlet weak var EntrarButton: UIButton!
     @IBOutlet weak var CriarButton: UIButton!
+    @IBOutlet weak var emailVendedor: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,6 +24,9 @@ class LoginVendedorViewController: UIViewController {
         CriarButton.layer.borderWidth = 2
         CriarButton.layer.borderColor = #colorLiteral(red: 1, green: 0.5716887116, blue: 0.1306569278, alpha: 1)
         
+        
+        self.hideKeyboardWhenTappedAround()
+        self.emailVendedor.keyboardType = UIKeyboardType.emailAddress
 
         // Do any additional setup after loading the view.
     }
