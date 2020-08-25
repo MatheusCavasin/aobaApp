@@ -34,10 +34,10 @@ class PrincipalComprador: UITabBarController {
         
         viewControllers = [firstBookTableVc, secondBookTableVc]
         
-        tabBar.items?[0].image = UIImage(named: "icone-hort")
-        tabBar.items?[1].image = UIImage(named: "icone-pedidos")
+        //        tabBar.items?[0].image = [first tab bar image]
+        //        tabBar.items?[1].image = [second tab bar image]
         
-        tabBar.items?[0].title = "Hortifruti"
+        tabBar.items?[0].title = "Hortfruits"
         tabBar.items?[1].title = "Pedidos"
     }
 }
