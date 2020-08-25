@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class PrincipalVendedor: UITabBarController {
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
@@ -44,6 +43,4 @@ class PrincipalVendedor: UITabBarController {
         tabBar.items?[1].title = "Pedidos"
         tabBar.items?[2].title = "Perfil"
     }
-    
-    
 }

@@ -15,42 +15,18 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
     
     @IBOutlet weak var CriarAnuncioButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var lblAnunciosAtivos: UILabel!
-    @IBOutlet weak var lblSemAnuncio: UILabel!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CriarAnuncioButton.layer.cornerRadius = ButtonConfig.raioBorda
-        CriarAnuncioButton.layer.borderWidth = ButtonConfig.larguraBorda
-        CriarAnuncioButton.layer.borderColor = ButtonConfig.laranja
+        CriarAnuncioButton.layer.cornerRadius = 5
+        CriarAnuncioButton.layer.borderWidth = 2
+        CriarAnuncioButton.layer.borderColor = #colorLiteral(red: 1, green: 0.5716887116, blue: 0.1306569278, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
-        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadView), name: NSNotification.Name(rawValue: "NotificationID"), object: nil)
 
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        reloadView()
-    }
-    
-    @objc func reloadView(){
-        print("bbbbbbbbbbbb")
-        self.tableView.reloadData()
-        if ModelVendedor.instance.hortifruit == [] {
-            self.tableView.isHidden = true
-            self.lblAnunciosAtivos.isHidden = true
-            self.lblSemAnuncio.isHidden = false
-        } else {
-            self.tableView.isHidden = false
-            self.lblAnunciosAtivos.isHidden = false
-            self.lblSemAnuncio.isHidden = true
-        }
         
     }
-    
-
-    
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,21 +52,6 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
         // Configure the cell...
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
-            print("index path of delete: \(indexPath)")
-            completionHandler(true)
-        }
-
-        let rename = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
-            print("index path of edit: \(indexPath)")
-            completionHandler(true)
-        }
-        let swipeActionConfig = UISwipeActionsConfiguration(actions: [rename, delete])
-        swipeActionConfig.performsFirstActionWithFullSwipe = false
-        return swipeActionConfig
     }
     
     
