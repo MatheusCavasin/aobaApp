@@ -67,6 +67,8 @@ class HortifrutiViewController: UIViewController, UITableViewDelegate, UITableVi
         
         if indexPath.row == 0 {
             // Para a primeira célula escrito "Selecionados para você"
+            
+            
             let cell = UITableViewCell()
             
             let label = UILabel()
