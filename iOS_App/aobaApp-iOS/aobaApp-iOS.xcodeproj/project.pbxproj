@@ -33,6 +33,7 @@
 		88B8423A24E6D79100E21123 /* AnuncioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8423924E6D79100E21123 /* AnuncioTableViewCell.swift */; };
 		88B8423E24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8423D24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift */; };
 		D10D4BBA24EC0A87003235B4 /* PrincipalComprador.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D4BB924EC0A87003235B4 /* PrincipalComprador.swift */; };
+		D123483824EEB6CC007095E2 /* TabPerfilComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D123483724EEB6CC007095E2 /* TabPerfilComprador.storyboard */; };
 		D14CB6E224ED6B7C00CA9B3F /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14CB6E124ED6B7C00CA9B3F /* CarrinhoViewController.swift */; };
 		D14CB6E424ED6D0600CA9B3F /* DetalhesDoProdutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14CB6E324ED6D0600CA9B3F /* DetalhesDoProdutoViewController.swift */; };
 		D16DB9A424E6B93700B2B279 /* HortifrutiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DB9A224E6B93700B2B279 /* HortifrutiCollectionViewCell.swift */; };
@@ -92,6 +93,7 @@
 		88B8423924E6D79100E21123 /* AnuncioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnuncioTableViewCell.swift; sourceTree = "<group>"; };
 		88B8423D24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnuncioVendedorViewController.swift; sourceTree = "<group>"; };
 		D10D4BB924EC0A87003235B4 /* PrincipalComprador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
+		D123483724EEB6CC007095E2 /* TabPerfilComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPerfilComprador.storyboard; sourceTree = "<group>"; };
 		D14CB6E124ED6B7C00CA9B3F /* CarrinhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
 		D14CB6E324ED6D0600CA9B3F /* DetalhesDoProdutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesDoProdutoViewController.swift; sourceTree = "<group>"; };
 		D16DB9A224E6B93700B2B279 /* HortifrutiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HortifrutiCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				88359C8F24E41F8C0073628A /* TabHortifrutiComprador.storyboard */,
 				88359C9124E41FA50073628A /* TabPedidosComprador.storyboard */,
 				88359C8524E2EB9B0073628A /* PrincipalComprador.storyboard */,
+				D123483724EEB6CC007095E2 /* TabPerfilComprador.storyboard */,
 			);
 			path = Comprador;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				88359C8A24E4189E0073628A /* PrincipalVendedor.storyboard in Resources */,
 				D1CB876D24EC32A000266EC0 /* ProdutoTableViewCell.xib in Resources */,
 				D16DB9A524E6B93700B2B279 /* HortifrutiCollectionViewCell.xib in Resources */,
+				D123483824EEB6CC007095E2 /* TabPerfilComprador.storyboard in Resources */,
 				88051B2824D1A39100339FE9 /* Main.storyboard in Resources */,
 				88359C9424E41FED0073628A /* PedidosVendedor.storyboard in Resources */,
 				D16DB9AD24E6B9DA00B2B279 /* HortifrutiTableViewCell.xib in Resources */,
