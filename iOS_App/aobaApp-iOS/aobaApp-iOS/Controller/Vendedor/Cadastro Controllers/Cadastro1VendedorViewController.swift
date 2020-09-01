@@ -12,6 +12,11 @@ import UIKit
 class Cadastro1VendedorViewController: UIViewController {
 
     @IBOutlet weak var ProximoButton: UIButton!
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var senhaTextField: UITextField!
+    @IBOutlet weak var confirmacaoTextField: UITextField!
+    
     
     
     override func viewDidLoad() {
@@ -35,7 +40,15 @@ class Cadastro1VendedorViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-
+    
+    @IBAction func proximoButton(_ sender: Any) {
+        
+        ModelVendedor.instance.nome = nomeTextField.text!
+        ModelVendedor.instance.email = emailTextField.text!
+        ModelVendedor.instance.senha = senhaTextField.text!
+    }
+    
+    
     /*
     // MARK: - Navigation
 

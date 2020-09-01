@@ -22,6 +22,4 @@ class User{
         self.nome = nome
         self.foto = foto
     }
-    
-    
 }

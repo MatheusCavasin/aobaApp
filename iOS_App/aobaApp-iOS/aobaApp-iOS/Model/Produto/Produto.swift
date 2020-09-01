@@ -24,4 +24,5 @@ class Produto {
         self.valor = valor
         self.qtdeMax = qtdeMax
     }
+    
 }

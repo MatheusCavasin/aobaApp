@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aoba-onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="V9y-Ey-qvF">
-                                <rect key="frame" x="83" y="88.5" width="248" height="125"/>
+                                <rect key="frame" x="83" y="80" width="248" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V9y-Ey-qvF" secondAttribute="height" multiplier="248:125" id="iyV-Yh-eVB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça o login para continuar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQA-vv-r7V">
-                                <rect key="frame" x="37" y="256.5" width="340" height="58"/>
+                                <rect key="frame" x="37" y="246" width="340" height="68.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JO0-CD-dQM">
-                                <rect key="frame" x="37" y="418.5" width="340" height="242"/>
+                                <rect key="frame" x="37" y="408.5" width="340" height="242"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4x-MM-0bM">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="45.5"/>
@@ -173,21 +173,22 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi9-SH-f54">
-                                <rect key="frame" x="37" y="726.5" width="340" height="45.5"/>
+                                <rect key="frame" x="37" y="715.5" width="340" height="45.5"/>
                                 <color key="backgroundColor" red="1" green="0.4941176471" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Proximo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="proximoButton:" destination="lZj-66-BA4" eventType="touchUpInside" id="Slq-yd-mOC"/>
                                     <segue destination="TFT-1G-avz" kind="show" id="Rn9-pd-zdY"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cadastro-comerciante1" translatesAutoresizingMaskIntoConstraints="NO" id="G2V-bc-gc7">
-                                <rect key="frame" x="83" y="148.5" width="248" height="125.5"/>
+                                <rect key="frame" x="83" y="140" width="248" height="125.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se no aoba para vender frutas, verduras e legumes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV6-UK-XP1">
-                                <rect key="frame" x="35.5" y="301.5" width="343" height="72"/>
+                                <rect key="frame" x="35.5" y="292" width="343" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -219,6 +220,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ProximoButton" destination="Zi9-SH-f54" id="dKu-Il-D99"/>
+                        <outlet property="confirmacaoTextField" destination="2PH-V2-n7y" id="sZP-BO-KWt"/>
+                        <outlet property="emailTextField" destination="2Wv-4b-uNr" id="efb-uX-1ik"/>
+                        <outlet property="nomeTextField" destination="A4x-MM-0bM" id="SgT-PR-JcS"/>
+                        <outlet property="senhaTextField" destination="P7k-VB-GoI" id="Qvk-A6-5Gw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EV1-OL-nLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,7 +245,7 @@
             <objects>
                 <navigationController id="j9j-JA-rkp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ppr-YP-7eJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -260,20 +265,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHJ-Zg-GlM">
-                                <rect key="frame" x="37" y="718" width="340" height="45.5"/>
+                                <rect key="frame" x="37" y="706.5" width="340" height="45.5"/>
                                 <color key="backgroundColor" red="1" green="0.4941176471" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="cadastrarButton:" destination="TFT-1G-avz" eventType="touchUpInside" id="33D-cD-YDG"/>
                                     <segue destination="tKo-Af-7dQ" kind="presentation" modalPresentationStyle="fullScreen" id="KrP-ev-vzj"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yMz-Ci-ich">
-                                <rect key="frame" x="37" y="410.5" width="340" height="242"/>
+                                <rect key="frame" x="37" y="400.5" width="340" height="242"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome Fantasia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOZ-6u-sqg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descrição" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOZ-6u-sqg">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -299,10 +305,10 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cadastro-comerciante2" translatesAutoresizingMaskIntoConstraints="NO" id="51Y-zX-cXc">
-                                <rect key="frame" x="83" y="148.5" width="248" height="125.5"/>
+                                <rect key="frame" x="83" y="140" width="248" height="125.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não precisa procurar, os compradores farão contato com você" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCX-jG-7DV">
-                                <rect key="frame" x="35.5" y="301.5" width="343" height="72"/>
+                                <rect key="frame" x="35.5" y="292" width="343" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -332,6 +338,10 @@
                     <navigationItem key="navigationItem" id="kSb-hX-pOg"/>
                     <connections>
                         <outlet property="CadastrarButton" destination="IHJ-Zg-GlM" id="j6y-eZ-7mI"/>
+                        <outlet property="cnpjTextField" destination="GXA-2I-P4B" id="h9a-yf-H8G"/>
+                        <outlet property="descricaoTextField" destination="SOZ-6u-sqg" id="glE-77-F1t"/>
+                        <outlet property="localTextField" destination="xau-Fs-knT" id="TVI-Im-CYG"/>
+                        <outlet property="telefoneTextField" destination="aah-qz-Ft2" id="kxS-pG-7be"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQu-YW-lGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -340,7 +350,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uYy-1G-NF2"/>
+        <segue reference="KrP-ev-vzj"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.4941176471" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
     <resources>

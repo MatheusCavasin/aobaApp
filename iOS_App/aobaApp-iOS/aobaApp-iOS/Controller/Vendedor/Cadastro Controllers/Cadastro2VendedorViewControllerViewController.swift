@@ -11,6 +11,12 @@ import UIKit
 class Cadastro2VendedorViewControllerViewController: UIViewController {
 
     @IBOutlet weak var CadastrarButton: UIButton!
+    @IBOutlet weak var descricaoTextField: UITextField!
+    @IBOutlet weak var cnpjTextField: UITextField!
+    @IBOutlet weak var telefoneTextField: UITextField!
+    @IBOutlet weak var localTextField: UITextField!
+    
+    let produtorRepository = ProdutorRepository()
     
     
     override func viewDidLoad() {
@@ -35,6 +41,19 @@ class Cadastro2VendedorViewControllerViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
+    
+    @IBAction func cadastrarButton(_ sender: Any) {
+        
+        let produtor: Produtor = Produtor(email: ModelVendedor.instance.email,
+                                          senha: ModelVendedor.instance.senha,
+                                          nome: ModelVendedor.instance.nome,
+                                          codigo_registro: cnpjTextField.text!,
+                                          foto: "",
+                                          descricao: descricaoTextField.text!)
+        produtorRepository.create(produtor: produtor)
+
+    }
+    
     
     /*
     // MARK: - Navigation

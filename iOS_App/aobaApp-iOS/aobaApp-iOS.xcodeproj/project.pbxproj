@@ -30,6 +30,7 @@
 		88359C9A24E421940073628A /* TabPedidosVendedor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88359C9924E421940073628A /* TabPedidosVendedor.storyboard */; };
 		88359C9C24E424620073628A /* PrincipalVendedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88359C9B24E424620073628A /* PrincipalVendedor.swift */; };
 		886227A324E6DFBF00605E61 /* AnuncioVendedorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886227A224E6DFBF00605E61 /* AnuncioVendedorTableViewCell.swift */; };
+		889F112124FD227C00B58431 /* ProdutorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889F112024FD227C00B58431 /* ProdutorRepository.swift */; };
 		88B8423324E6D47300E21123 /* LoginVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */; };
 		88B8423424E6D47300E21123 /* Cadastro1VendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8423124E6D47300E21123 /* Cadastro1VendedorViewController.swift */; };
 		88B8423524E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8423224E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift */; };
@@ -99,6 +100,7 @@
 		88359C9B24E424620073628A /* PrincipalVendedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalVendedor.swift; sourceTree = "<group>"; };
 		88359C9D24E429290073628A /* PrincipalComprador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalComprador.swift; sourceTree = "<group>"; };
 		886227A224E6DFBF00605E61 /* AnuncioVendedorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnuncioVendedorTableViewCell.swift; sourceTree = "<group>"; };
+		889F112024FD227C00B58431 /* ProdutorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutorRepository.swift; sourceTree = "<group>"; };
 		88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVendedorViewController.swift; sourceTree = "<group>"; };
 		88B8423124E6D47300E21123 /* Cadastro1VendedorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro1VendedorViewController.swift; sourceTree = "<group>"; };
 		88B8423224E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro2VendedorViewControllerViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				39195C4D24F54FA500A1A82A /* Resource */,
+				889F111D24FD221E00B58431 /* Repository */,
 				88359C7E24D848770073628A /* Model */,
 				88359C7F24D848B90073628A /* Controller */,
 				88359C8024D848D10073628A /* Storyboards */,
@@ -207,19 +210,17 @@
 		88359C7E24D848770073628A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88825C7524FC5763002256F4 /* Produto */,
 				D19FE67224E43369007D138A /* Anuncio.swift */,
-				D19FE66F24E43368007D138A /* CategoriaProduto.swift */,
 				D19FE67B24E4336A007D138A /* Ceasa.swift */,
 				D19FE67824E43369007D138A /* Endereco.swift */,
 				D19FE67624E43369007D138A /* ItemCarrinho.swift */,
 				D19FE67024E43369007D138A /* Pedido.swift */,
-				D19FE67424E43369007D138A /* Produto.swift */,
 				D19FE67324E43369007D138A /* Produtor.swift */,
 				D16DB9D224E6FCE400B2B279 /* Comerciante.swift */,
 				D19FE67724E43369007D138A /* StatusItem.swift */,
 				D19FE67924E43369007D138A /* TipoComercio.swift */,
 				D1EC845924F549FF003BB786 /* ButtonConfig.swift */,
-				D19FE67A24E4336A007D138A /* TipoProduto.swift */,
 				D1EC845B24F54A1A003BB786 /* ModelVendedor.swift */,
 				88359C8124D9A3640073628A /* User.swift */,
 				D1CB876624EC1B4900266EC0 /* Singleton.swift */,
@@ -274,16 +275,59 @@
 			path = Comprador;
 			sourceTree = "<group>";
 		};
+		88825C7424FC4CE6002256F4 /* Cadastro Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */,
+				88B8423124E6D47300E21123 /* Cadastro1VendedorViewController.swift */,
+				88B8423224E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift */,
+			);
+			path = "Cadastro Controllers";
+			sourceTree = "<group>";
+		};
+		88825C7524FC5763002256F4 /* Produto */ = {
+			isa = PBXGroup;
+			children = (
+				D19FE67A24E4336A007D138A /* TipoProduto.swift */,
+				D19FE66F24E43368007D138A /* CategoriaProduto.swift */,
+				D19FE67424E43369007D138A /* Produto.swift */,
+			);
+			path = Produto;
+			sourceTree = "<group>";
+		};
+		889F111D24FD221E00B58431 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				889F111E24FD223C00B58431 /* Produtor Request */,
+				889F111F24FD224500B58431 /* Comprador Request */,
+			);
+			name = Repository;
+			path = "Model/Resource/aobaApp-iOS/Model/Resource/Repository";
+			sourceTree = "<group>";
+		};
+		889F111E24FD223C00B58431 /* Produtor Request */ = {
+			isa = PBXGroup;
+			children = (
+				889F112024FD227C00B58431 /* ProdutorRepository.swift */,
+			);
+			path = "Produtor Request";
+			sourceTree = "<group>";
+		};
+		889F111F24FD224500B58431 /* Comprador Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Comprador Request";
+			sourceTree = "<group>";
+		};
 		88B8423624E6D47C00E21123 /* Vendedor */ = {
 			isa = PBXGroup;
 			children = (
-				D1EC845F24F54B08003BB786 /* Criar Anuncio Controller 2 */,
+				D1EC845F24F54B08003BB786 /* Criar Anuncio */,
+				88825C7424FC4CE6002256F4 /* Cadastro Controllers */,
 				88359C9B24E424620073628A /* PrincipalVendedor.swift */,
-				88B8423124E6D47300E21123 /* Cadastro1VendedorViewController.swift */,
-				88B8423224E6D47300E21123 /* Cadastro2VendedorViewControllerViewController.swift */,
-				88B8423724E6D77900E21123 /* AnuncioTableViewController.swift */,
-				88B8423024E6D47300E21123 /* LoginVendedorViewController.swift */,
 				88B8423D24E6DA7700E21123 /* TabAnuncioVendedorViewController.swift */,
+				88B8423724E6D77900E21123 /* AnuncioTableViewController.swift */,
 				886227A224E6DFBF00605E61 /* AnuncioVendedorTableViewCell.swift */,
 			);
 			path = Vendedor;
@@ -354,13 +398,13 @@
 			path = Comprador;
 			sourceTree = "<group>";
 		};
-		D1EC845F24F54B08003BB786 /* Criar Anuncio Controller 2 */ = {
+		D1EC845F24F54B08003BB786 /* Criar Anuncio */ = {
 			isa = PBXGroup;
 			children = (
 				D1EC846024F54B15003BB786 /* CriarAnuncioTableViewCell.swift */,
 				D1EC846224F54B1B003BB786 /* CriarAnuncioViewController.swift */,
 			);
-			path = "Criar Anuncio Controller 2";
+			path = "Criar Anuncio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +502,7 @@
 				D19FE68724E4336A007D138A /* TipoProduto.swift in Sources */,
 				D1CB876C24EC32A000266EC0 /* ProdutoTableViewCell.swift in Sources */,
 				D19D95DB24E5842B007701C4 /* TerceiraTelaDeCadastroViewControllerViewController.swift in Sources */,
+				889F112124FD227C00B58431 /* ProdutorRepository.swift in Sources */,
 				D16DB9AC24E6B9DA00B2B279 /* HortifrutiTableViewCell.swift in Sources */,
 				D10D4BBA24EC0A87003235B4 /* PrincipalComprador.swift in Sources */,
 				D19D95D524E57252007701C4 /* LoginViewController.swift in Sources */,
@@ -640,7 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 8GN6S9CHL7;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 8GN6S9CHL7;
 				INFOPLIST_FILE = "aobaApp-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -10,10 +10,12 @@ import Foundation
 
 class CategoriaProduto{
     var nome: String
+    var foto: String
     var tipoProduto: TipoProduto
     
-    init(nome: String, tipoProduto: TipoProduto) {
+    init(nome: String, foto: String, tipoProduto: TipoProduto) {
         self.nome = nome
+        self.foto = foto
         self.tipoProduto = tipoProduto
     }
 }

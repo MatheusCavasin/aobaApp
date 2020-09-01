@@ -17,4 +17,12 @@ class ModelVendedor {
     }
     
     var hortifruit: [String] = []
+    var email: String = ""
+    var senha: String = ""
+    var nome: String = ""
+    var codigo_registro: String = ""
+    var foto: String = ""
+    var descricao: String = ""
+    
 }
+
