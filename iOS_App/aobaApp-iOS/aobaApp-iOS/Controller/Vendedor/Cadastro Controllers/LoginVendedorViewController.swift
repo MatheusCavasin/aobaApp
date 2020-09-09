@@ -14,7 +14,11 @@ class LoginVendedorViewController: UIViewController {
     @IBOutlet weak var EntrarButton: UIButton!
     @IBOutlet weak var CriarButton: UIButton!
     @IBOutlet weak var emailVendedor: UITextField!
+    @IBOutlet weak var senhaVendedor: UITextField!
     
+    var userID = ""
+    let produtorRepository = ProdutorRepository()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,10 @@ class LoginVendedorViewController: UIViewController {
         CriarButton.layer.cornerRadius = 5
         CriarButton.layer.borderWidth = 2
         CriarButton.layer.borderColor = #colorLiteral(red: 1, green: 0.5716887116, blue: 0.1306569278, alpha: 1)
+        
+        
+        emailVendedor.text = "matheus@redeaoba.com.br"
+        senhaVendedor.text = "123456"
         
         
         self.hideKeyboardWhenTappedAround()
@@ -51,6 +59,31 @@ class LoginVendedorViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    
+    @IBAction func entrarButton(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(emailVendedor.text, forKey: "Usuario")
+        defaults.set(senhaVendedor.text, forKey: "senha")
+        
+        produtorRepository.getProdutos()
+        /*
+        let username = "username"
+        let password = "password"
+        let loginString = "\(username):\(password)"
+        
+        let loginData = loginString.data(using: String.Encoding.utf8)!
+        let base64LoginString = loginData.base64EncodedString()
+        let url = URL(string: "http://192.168.1.2/rest")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+        
+        */
+        
+        
     }
     
     

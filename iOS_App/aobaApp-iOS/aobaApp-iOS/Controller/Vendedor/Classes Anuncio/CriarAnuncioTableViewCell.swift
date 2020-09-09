@@ -8,67 +8,53 @@
 
 import UIKit
 
-class LabelsCriarAnuncioTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblSelecioneCell: UILabel!
+class LabelsCriarAnuncioTableViewCell: UITableViewCell {
+    
+    
+    
+    
     @IBOutlet weak var lblQtdeCaixasCell: UILabel!
     @IBOutlet weak var lblValorCell: UILabel!
-    @IBOutlet weak var lblProdutosCell: UILabel!
+    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()        
     }
-
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
-}
-
-class SearchBarCell: UITableViewCell {
-
-    @IBOutlet weak var searchBar: UISearchBar!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        searchBar.backgroundImage = UIImage()
-    }
-    
-    
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
 }
 
 class NaoEcontreiButtonCell: UITableViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
 }
 
 class QtdeCaixasCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var lblCaixas: UILabel!
     @IBOutlet weak var stepperButton: UIStepper!
     
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -82,7 +68,7 @@ class QtdeCaixasCell: UITableViewCell {
     }
     
     
-
+    
 }
 
 class TextFieldValorCell: UITableViewCell, UITextFieldDelegate {
@@ -97,13 +83,13 @@ class TextFieldValorCell: UITableViewCell, UITextFieldDelegate {
         
         return formatter
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         txtPreco.delegate = self
         txtPreco.placeholder = updateTextField()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -125,7 +111,7 @@ class TextFieldValorCell: UITableViewCell, UITextFieldDelegate {
                     self.qtde = 0
                     self.txtPreco.text = ""
                 }))
-//                present(alerta, animated: true, completion: nil)
+                //                present(alerta, animated: true, completion: nil)
             } else {
                 txtPreco.text = updateTextField()
             }
@@ -138,11 +124,11 @@ class TextFieldValorCell: UITableViewCell, UITextFieldDelegate {
         
         return false
     }
-
+    
 }
 
 class FotoButtonCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var addFotoButton: UIButton!
     
@@ -153,7 +139,7 @@ class FotoButtonCell: UITableViewCell {
         addFotoButton.layer.borderWidth = ButtonConfig.larguraBorda
         addFotoButton.layer.borderColor = ButtonConfig.laranja
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -162,11 +148,11 @@ class FotoButtonCell: UITableViewCell {
         print("AAAAAA\n\n AAAAAA")
     }
     
-
+    
 }
 
 class AddProdutoButtonCell: UITableViewCell {
-
+    
     @IBOutlet weak var addProdutoButton: UIButton!
     weak var delegate: CellsDelegate?
     
@@ -175,7 +161,7 @@ class AddProdutoButtonCell: UITableViewCell {
         super.awakeFromNib()
         addProdutoButton.layer.cornerRadius = ButtonConfig.raioBorda
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -186,17 +172,17 @@ class AddProdutoButtonCell: UITableViewCell {
         ModelVendedor.instance.hortifruit = ["maça gala", "5", "R$ 70,00"]
     }
     
-
+    
 }
 
 
 class ProdutosTableViewCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var imgProduto: UIImageView!
-     @IBOutlet weak var lblTipo: UILabel!
-     @IBOutlet weak var lblQuantidade: UILabel!
-     @IBOutlet weak var lblValor: UILabel!
+    @IBOutlet weak var lblTipo: UILabel!
+    @IBOutlet weak var lblQuantidade: UILabel!
+    @IBOutlet weak var lblValor: UILabel!
     
     
     
@@ -210,7 +196,7 @@ class ProdutosTableViewCell: UITableViewCell {
             configureCell(horfruit: ModelVendedor.instance.hortifruit)
         }
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -222,11 +208,11 @@ class ProdutosTableViewCell: UITableViewCell {
         self.lblQuantidade.text = horfruit[1] + " caixas"
         self.lblValor.text = horfruit[2]
     }
-
+    
 }
 
 class PublicarButtonCell: UITableViewCell {
-
+    
     weak var delegate: CellsDelegate?
     @IBOutlet weak var publicarButton: UIButton!
     
@@ -245,12 +231,42 @@ class PublicarButtonCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
     @IBAction func publicarButton(_ sender: Any) {
         print("publicar!")
         delegate?.publicarButtonPressed()
     }
 }
+
+
+// MARK: Classes de Edição do Anuncio
+/// obs: algumas estao sendo reaproveitadas com as classes de criação do anuncio
+
+class EditarAnuncioTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var lblProduto: UILabel!
+    @IBOutlet weak var lblQtdeCaixas: UILabel!
+    @IBOutlet weak var lblPrecoCaixa: UILabel!
+    
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
+    
+}
+
+
+
+
 
 protocol CellsDelegate: class {
     func addButtonPressed()

@@ -8,9 +8,13 @@
 
 import Foundation
 class ApiResource{
+    
+    
+    
+    
     //Não esqueca de importar o Foundation
-    static func request(method: String, url: String, params: [String: Any]?, body: [String: Any]?,
-                     completion: @escaping ([String: Any]?, Error?) -> Void){
+    static func request(method: String, url: String, params: [String: Any]?, body: [String: Any]?, withAuth: Bool,
+                     completion: @escaping (Any?, Error?) -> Void){
 
         print("entrou em request")
         //URL válida
@@ -18,12 +22,25 @@ class ApiResource{
             completion(nil, nil)
             return
         }
-            
+        
         //Cria a representacão da requisição
         let request = NSMutableURLRequest(url: URL)
-        
         //Atribui à requisiçāo o método parassado como parâmetro
         request.httpMethod = method.uppercased()
+        
+        if withAuth {
+            
+            //Set das variáveis utilizadas na Basic Authentication
+            let username = UserDefaults.standard.string(forKey: "Usuario")!
+            let password = UserDefaults.standard.string(forKey: "senha")!
+            let loginString = "\(username):\(password)"
+            let loginData = loginString.data(using: String.Encoding.utf8)!
+            let base64LoginString = loginData.base64EncodedString()
+            
+            
+            request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+        }
+        
         
         //Se houver parâmetros para enviar na URL
         if params != nil{
@@ -54,12 +71,15 @@ class ApiResource{
         let task = URLSession.shared.dataTask(with: request as URLRequest) {
             (data, response, error) in
             do {
-
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("statusCode: \(httpResponse.statusCode)")
+                }
+                
                 if let data = data {
                     //A resposta chegou
                     print("RequestApi.request: A resposta chegou")
                     let response = try JSONSerialization.jsonObject(with: data, options: [])
-                    completion(response as? [String : Any], nil)
+                    completion(response, nil)
                 }
                 else {
                     print("RequestApi.request: Não houve resposta")

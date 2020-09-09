@@ -18,6 +18,8 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
     @IBOutlet weak var lblAnunciosAtivos: UILabel!
     @IBOutlet weak var lblSemAnuncio: UILabel!
     
+    let produtorRepositoy = ProdutorRepository()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +29,52 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
         tableView.delegate = self
         tableView.dataSource = self
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadView), name: NSNotification.Name(rawValue: "NotificationID"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.dadosCapturados), name: NSNotification.Name(rawValue: "NotificationID2"), object: nil)
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         reloadView()
+        dadosChamar()
     }
+    
+    func dadosChamar(){
+        produtorRepositoy.getAnuncios()
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoadView") as? LoadingViewController {
+            self.present(vc, animated:true, completion:nil)
+        }
+        
+    }
+    
+    @objc func dadosCapturados(){
+        print("\n\nPegou?\n\n")
+        
+        
+        
+        
+    }
+    
+//    @objc func reloadView(){
+//        print("bbbbbbbbbbbb")
+//        
+//        self.tableView.reloadData()
+//        if ModelVendedor.instance.hortifruit == [] {
+//            self.tableView.isHidden = true
+//            self.lblAnunciosAtivos.isHidden = true
+//            self.lblSemAnuncio.isHidden = false
+//        } else {
+//            self.tableView.isHidden = false
+//            self.lblAnunciosAtivos.isHidden = false
+//            self.lblSemAnuncio.isHidden = true
+//        }
+//        
+//    }
     
     @objc func reloadView(){
         print("bbbbbbbbbbbb")
+        
         self.tableView.reloadData()
-        if ModelVendedor.instance.hortifruit == [] {
+        if ModelVendedor.instance.dictListaAnuncios.isEmpty {
             self.tableView.isHidden = true
             self.lblAnunciosAtivos.isHidden = true
             self.lblSemAnuncio.isHidden = false
@@ -49,8 +86,8 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
         
     }
     
-
     
+
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,6 +113,15 @@ class TabAnuncioVendedorViewController: UIViewController, UITableViewDelegate, U
         // Configure the cell...
         
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "EditarAnuncio") as? EditarAnuncioController {
+            self.present(vc, animated:true, completion:nil)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
